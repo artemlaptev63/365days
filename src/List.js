@@ -4,21 +4,38 @@ import ListItem from './ListItem';
 import MainBanner from './MainBanner';
 
 class List extends Component {
-  render() {
-    var reversePosts = posts.getReverseArray();
-    var post = reversePosts.map((item, index) => {
-        return <ListItem
-                    key={index} 
-                    path={'/detail/' + item.id}
-                    item = {item} />
-    })
-    return (
-        <div>
-            <MainBanner />
-            {post}
-        </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = { count: 10 };
+    }
+
+    showMore() {
+        this.setState({count: this.state.count + 10})
+    }
+
+    render() {
+        var reversePosts = posts.getReverseArray(this.state.count);
+        var post = reversePosts.map((item, index) => {
+            return <ListItem
+                        key={index} 
+                        path={'/detail/' + item.id}
+                        item = {item} />
+        })
+
+
+        let buttonShow;
+        if ( this.state.count < posts.data.length ) {
+            buttonShow = <button onClick={this.showMore.bind(this)}>Show more</button>;
+        }
+
+        return (
+            <div>
+                <MainBanner />
+                {post}
+                {buttonShow}
+            </div>
+        );
+    }
 }
 
 export default List;
