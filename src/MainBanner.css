@@ -1,0 +1,91 @@
+div#main-banner {
+    color: #ffffff;
+    background-size: cover !important;
+}
+#main-banner .grid-row-1, #main-banner .grid-row-2 {
+    display: flex;
+    padding-right: 37px;
+}
+#main-banner .grid-row-2 {
+    padding-top: 200px;
+    padding-right: 110px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+#main-banner .grid-item {
+    flex: 1;
+}
+#main-banner .about-image {
+    text-align: right;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.94;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    margin-right: -30px;
+}
+#main-banner .about-image p {
+    transform: rotate(-90deg);
+    width: 250px;
+    float: right;
+    margin-top: 140px;
+    letter-spacing: 2px;
+}
+#main-banner .title {
+    margin-right: -220px;
+}
+#main-banner .autor i {
+    font-weight: 100;
+    font-size: 23px;
+    opacity: 0.8;
+}
+#main-banner .logo img {
+    width: 200px;
+    padding-top: 22px;
+}
+#main-banner p.description {
+    text-align: right;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 10px;
+}
+#main-banner .description i {
+    font-size: 20px;
+    opacity: 0.8;
+}
+#main-banner div#main-banner p.description, #main-banner div#main-banner h1 {
+    display: inline-block;
+}
+
+#welcome h1, #welcome p {
+    text-align: center;
+}
+#welcome h1 {
+    font-weight: 900;
+    font-size: 35px;
+
+}
+#welcome p {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+#welcome a {
+    text-decoration: none;
+    color: #000000;
+    opacity: 1;
+}
+#welcome a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+div#welcome p:nth-child(4) {
+    margin-top: 30px;
+}
+
+
+

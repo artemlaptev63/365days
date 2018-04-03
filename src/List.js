@@ -23,16 +23,16 @@ class List extends Component {
         })
 
 
-        let buttonShow;
+        let buttonShowMore;
         if ( this.state.count < posts.data.length ) {
-            buttonShow = <button onClick={this.showMore.bind(this)}>Show more</button>;
+            buttonShowMore = <button onClick={this.showMore.bind(this)}>Show more</button>;
         }
 
         return (
             <div>
                 <MainBanner />
                 {post}
-                {buttonShow}
+                {buttonShowMore}
             </div>
         );
     }
