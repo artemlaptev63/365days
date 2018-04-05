@@ -14,8 +14,8 @@ class MainBanner extends Component {
                 <div style={mainBanner} id='main-banner'>
                     <div className='grid-row-1'>
                         <div className='grid-item about-image'>
-                            <p className='autor'>By <i>Irina Manning</i></p>
-                            <p className='title'>Girls</p>
+                            <p className='autor'>By <i>{ lastItem.autor }</i></p>
+                            <p className='title'>{ lastItem.title }</p>
                         </div>
                     </div>
                     <div className='grid-row-2'>

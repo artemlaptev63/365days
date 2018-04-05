@@ -1,0 +1,16 @@
+.button-go-up {
+    text-align: center;
+}
+.button-go-up button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 100px;
+    padding: 0px;
+
+}
+.button-go-up button:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@ class Detail extends Component {
     var post = posts.getItem(this.props.match.params.id);
     return (
       <div>
-        <p>{post.test}</p>
+        <p>{post.description}</p>
       </div>
     );
   }

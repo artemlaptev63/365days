@@ -8,7 +8,7 @@ div#main-banner {
 }
 #main-banner .grid-row-2 {
     padding-top: 200px;
-    padding-right: 110px;
+    padding-right: 80px;
     padding-left: 100px;
     padding-bottom: 30px;
 }
@@ -23,17 +23,17 @@ div#main-banner {
     line-height: 1.94;
     letter-spacing: 0.3px;
     white-space: nowrap;
-    margin-right: -30px;
+    margin-right: -35px;
 }
 #main-banner .about-image p {
     transform: rotate(-90deg);
-    width: 250px;
+    width: 270px;
     float: right;
     margin-top: 140px;
     letter-spacing: 2px;
 }
 #main-banner .title {
-    margin-right: -220px;
+    margin-right: -230px;
 }
 #main-banner .autor i {
     font-weight: 100;
@@ -50,7 +50,7 @@ div#main-banner {
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: 100;
-    margin-right: 10px;
+    margin-right: 45px;
 }
 #main-banner .description i {
     font-size: 20px;

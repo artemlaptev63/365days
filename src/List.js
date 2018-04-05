@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import posts from './posts';
 import ListItem from './ListItem';
 import MainBanner from './MainBanner';
+import ButtonToTop from './ButtonGoBackToTop';
+import Footer from './Footer';
+import './List.css';
 
 class List extends Component {
     constructor(props) {
@@ -25,7 +28,9 @@ class List extends Component {
 
         let buttonShowMore;
         if ( this.state.count < posts.data.length ) {
-            buttonShowMore = <button onClick={this.showMore.bind(this)}>Show more</button>;
+            buttonShowMore = <div className='show-more'>
+                                <button onClick={this.showMore.bind(this)}>SHOW 10 PREVIOUS POSTS</button>
+                             </div>;
         }
 
         return (
@@ -33,6 +38,8 @@ class List extends Component {
                 <MainBanner />
                 {post}
                 {buttonShowMore}
+                <ButtonToTop />
+                <Footer />
             </div>
         );
     }

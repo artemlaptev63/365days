@@ -1,0 +1,20 @@
+.show-more {
+    text-align: center;
+}
+.show-more button {
+    font-family: 'Didot', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    border: 1px solid black;
+    padding: 15px 40px;
+    letter-spacing: 0.8px;
+    font-stretch: ultra-condensed;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.show-more button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
