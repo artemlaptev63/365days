@@ -3,12 +3,16 @@ import React, { Component } from 'react';
 class Like extends Component {
     constructor(props) {
         super(props);
-        this.state = { like: 'false' };
+        this.state = { like: localStorage.getItem(this.props.id) };
     }
     like(){   
-        if(this.state.like == 'false') {
-            this.setState({like: 'true'})
-        } else {this.setState({like: 'false'})}
+        if(this.state.like == 'null') {
+            this.setState({like: 'true'});
+            localStorage.setItem(this.props.id, 'true');
+        } else {
+            this.setState({like: 'null'});
+            localStorage.setItem(this.props.id, 'null');
+        }
     }
     componentWillMount() {
         localStorage.setItem(this.props.id, localStorage.getItem(this.props.id));
@@ -16,16 +20,7 @@ class Like extends Component {
             like: localStorage.getItem(this.props.id)
         })
     }
-    componentWillUpdate(nextProps, nextState) {
-        if(this.state.like === 'false') {
-            localStorage.setItem(this.props.id, 'true');
-        } else {
-            localStorage.setItem(this.props.id, 'false');
-        }
-    }
     render() {
-        // this.test();
-        // localStorage.clear();
         console.log(this.state.like);
         let likeIcon;
         if (this.state.like !== "true") {
