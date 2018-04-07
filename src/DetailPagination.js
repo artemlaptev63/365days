@@ -66,7 +66,11 @@ class DetailPagination extends Component {
         }    
     }
     render() {
-        
+        var post = posts.getItem(this.props.match.params.id);
+
+        document.title = post.title;
+        document.querySelector('meta[name="description"]').content = post.description;
+
         var disabled = {
             pointerEvents: 'none',
             color: 'grey'

@@ -18,6 +18,8 @@ class List extends Component {
     }
 
     render() {
+        document.title = '365 Days Of Photos';
+        document.querySelector('meta[name="description"]').content = "365 Days Of Photos, The best photo in the internet";
         var reversePosts = posts.getReverseArray(this.state.count);
         var post = reversePosts.map((item, index) => {
             return <ListItem
