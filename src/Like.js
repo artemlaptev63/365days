@@ -5,7 +5,7 @@ class Like extends Component {
         super(props);
         this.state = { like: localStorage.getItem(this.props.id) };
     }
-    like(){   
+    like() {   
         if(this.state.like == 'null') {
             this.setState({like: 'true'});
             localStorage.setItem(this.props.id, 'true');
@@ -21,12 +21,12 @@ class Like extends Component {
         })
     }
     render() {
-        console.log(this.state.like);
+
         let likeIcon;
         if (this.state.like !== "true") {
-          likeIcon = 'assets/icons/like-false.png';
+            likeIcon = 'assets/icons/like-false.png';
         } else {
-          likeIcon = 'assets/icons/like-true.png';
+            likeIcon = 'assets/icons/like-true.png';
         }
 
 
@@ -37,12 +37,12 @@ class Like extends Component {
             className = 'right-item-like';
         }
 
-    return (
-      <div>
-        <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
-      </div>
-    );
-  }
+        return (
+            <div>
+                <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
+            </div>
+        );
+    }
 }
 
 export default Like;

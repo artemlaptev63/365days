@@ -281,5 +281,13 @@ export default {
             showArray.push(reverseArray[j]);
         }
         return showArray;
+    },
+    // получаем элементы пагинации
+    getPagination: function(min, max) {
+        var paginationArray = [];
+        for (var i = min; i <= max; i++) {
+            paginationArray.push(this.data[i]);
+        }
+        return paginationArray;
     }
 }

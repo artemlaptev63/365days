@@ -136,21 +136,21 @@
   margin-left: -100px;
 }
 /*style for likes*/
-.left-item-like {
+div.left-item .left-item-like {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 30px;
   margin-bottom: 20px;
 }
-.right-item-like {
+div.right-item .right-item-like {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 30px;
   margin-bottom: 20px;
 }
-.left-item-like:hover, .right-item-like:hover {
+div.right-item .left-item-like:hover, div.right-item .right-item-like:hover {
   cursor: pointer;
 } 
 /*end style for likes*/

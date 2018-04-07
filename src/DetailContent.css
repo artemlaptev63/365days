@@ -1,0 +1,10 @@
+div#detail-content .left-item-like {
+  width: 30px;
+
+}
+div#detail-content .right-item-like {
+  width: 30px;
+}
+div#detail-content .left-item-like:hover, div#detail-content .right-item-like:hover {
+  cursor: pointer;
+} 

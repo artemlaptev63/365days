@@ -2,11 +2,46 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import posts from './posts';
 import './ListItem.css';
-import Like from './Like';
+// import Like from './Like';
 
 class ListItem extends Component {
+  constructor(props) {
+        super(props);
+        this.state = { like: localStorage.getItem(this.props.item.id) };
+    }
+    like() {   
+        if(this.state.like == 'null') {
+            this.setState({like: 'true'});
+            localStorage.setItem(this.props.item.id, 'true');
+        } else {
+            this.setState({like: 'null'});
+            localStorage.setItem(this.props.item.id, 'null');
+        }
+    }
+    componentWillMount() {
+        localStorage.setItem(this.props.item.id, localStorage.getItem(this.props.item.id));
+        this.setState({
+            like: localStorage.getItem(this.props.item.id)
+        })
+    }
+
   
-  render() {   
+  render() { 
+  let likeIcon;
+        if (this.state.like !== "true") {
+            likeIcon = 'assets/icons/like-false.png';
+        } else {
+            likeIcon = 'assets/icons/like-true.png';
+        }
+
+
+        let className;
+        if (this.props.item.id % 2 === 0) {
+            className = 'left-item-like';
+        } else {
+            className = 'right-item-like';
+        }
+  
     var mainPhotoItem = {
       background: 'url('+ this.props.item.mainImage +') no-repeat'
     }
@@ -46,7 +81,8 @@ class ListItem extends Component {
                   <div className='about-image-left-item'>
                     <p><b>{ this.props.item.title }</b><br />
                        By <i>{ this.props.item.autor }</i></p>
-                    <Like id={this.props.item.id} />
+                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
+
                   </div>
                 </div>
               </div>
@@ -57,7 +93,8 @@ class ListItem extends Component {
                   <div className='about-image-right-item'>
                     <p><b>{ this.props.item.title }</b><br />
                        By <i>{ this.props.item.autor }</i></p>
-                    <Like id={this.props.item.id} />
+                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
+
                   </div>
                   <div>
                     <div className="secondary-photo-right">
