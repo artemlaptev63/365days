@@ -1,4 +1,17 @@
+ul.pagination a {
+    text-decoration: none;
+}
 ul.pagination li {
     display: inline;
-    margin-left: 10px; 
+    margin-right: 40px; 
+    font-weight: 900;
+    font-size: 18px;
+}
+ul.pagination {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    background-color: #efefef;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import posts from './posts';
-// import Like from './Like';
 import './DetailContent.css';
 
 
@@ -39,6 +38,11 @@ class DetailContent extends Component {
     render() {
         var post = posts.getItem(this.props.item);
 
+        var images = post.images.map((item, index) => {
+            return <img src={item} 
+                        key={index}/>
+        });
+
         let likeIcon;
         if (this.state.like !== "true") {
             likeIcon = 'assets/icons/like-false.png';
@@ -55,13 +59,21 @@ class DetailContent extends Component {
         }
 
 
-                return (
+        return (
             <div id='detail-content'>
-                <div>
-                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
-                    <p>{post.description}</p>
+                <div className='social-media'>
+                    <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} /></p>
+                    <p><img src='assets/icons/like-false.png' /></p>
+                    <p><img src='assets/icons/like-false.png' /></p>
                 </div>
-                <div></div>
+                <div className='detail-description'>
+                    <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
+                    <p className='autor'>By <i>{post.autor}</i></p>
+                    <p className='description'>{post.description}</p>
+                    <div className='all-images'>
+                        {images}
+                    </div>
+                </div>
             </div>
         );
     }

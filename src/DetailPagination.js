@@ -14,6 +14,7 @@ class DetailPagination extends Component {
             paginationCountmin: +this.props.match.params.id - 3,
             paginationCountmax: +this.props.match.params.id + 1
         };
+        window.scrollTo( 0, 0 );
     }
     componentWillMount() {
         if (String(this.props.match.params.id) === String(posts.data.length - 1)) {
@@ -40,6 +41,7 @@ class DetailPagination extends Component {
         }
     }
     componentWillReceiveProps(nextProps) {
+        window.scrollTo( 0, 0 );
         if (String(nextProps.match.params.id) === String(posts.data.length - 1)) {
             this.setState({
                 paginationCountmin: +nextProps.match.params.id - 4,
@@ -69,9 +71,9 @@ class DetailPagination extends Component {
             pointerEvents: 'none',
             color: 'grey'
         };
-
-
-        // var post = posts.getItem(this.props.match.params.id);
+        var ondisabled = {
+            color: 'black'
+        }
 
 
         var tenItems = posts.getPagination(this.state.paginationCountmin, this.state.paginationCountmax);
@@ -80,12 +82,13 @@ class DetailPagination extends Component {
                 return <Link key={index}
                          to={/detail/ + item.id}
                          style={disabled}>
-                         <li>{item.id}</li>
+                         <li>#{item.id}</li>
                        </Link>
             } else {
                 return <Link key={index}
-                         to={/detail/ + item.id}>
-                         <li>{item.id}</li>
+                         to={/detail/ + item.id}
+                         style={ondisabled}>
+                         <li>#{item.id}</li>
                        </Link>
             }
         });
@@ -93,44 +96,44 @@ class DetailPagination extends Component {
         var first;
         if (this.props.match.params.id == 1) {
             first = <Link to={'/detail/' + posts.data[0].id} style={disabled}>
-                        <li>&lt;&lt;First</li>
+                        <li>&lt; &lt; First</li>
                     </Link>
         } else {
-            first = <Link to={'/detail/' + posts.data[0].id}>
-                        <li>&lt;&lt;First</li>
+            first = <Link to={'/detail/' + posts.data[0].id} style={ondisabled}>
+                        <li>&lt; &lt; First</li>
                     </Link>
         }
 
         var previous;
         if (this.props.match.params.id == 1) {
             previous = <Link to={'/detail/' + 1} style={disabled}>
-                           <li>&lt;Previous</li>
+                           <li>&lt; Previous</li>
                        </Link>
         } else {
-            previous = <Link to={'/detail/' + (this.props.match.params.id - 1)}>
-                           <li>&lt;Previous</li>
+            previous = <Link to={'/detail/' + (this.props.match.params.id - 1)} style={ondisabled}>
+                           <li>&lt; Previous</li>
                        </Link>
         }
 
         var next;
         if (this.props.match.params.id == posts.data.length) {
             next = <Link to={'/detail/' + (+this.props.match.params.id + 1)} style={disabled}>
-                      <li>Next&gt;</li>
+                      <li>Next &gt;</li>
                    </Link>
         } else {
-            next = <Link to={'/detail/' + (+this.props.match.params.id + 1)}>
-                      <li>Next&gt;</li>
+            next = <Link to={'/detail/' + (+this.props.match.params.id + 1)} style={ondisabled}>
+                      <li>Next &gt;</li>
                    </Link>
         }
 
         var last;
         if (this.props.match.params.id == posts.data.length) {
             last = <Link to={'/detail/' + posts.data.length} style={disabled}>
-                      <li>Last&gt;&gt;</li>
+                      <li>Last &gt; &gt;</li>
                    </Link>
         } else {
-            last = <Link to={'/detail/' + posts.data.length}>
-                      <li>Last&gt;&gt;</li>
+            last = <Link to={'/detail/' + posts.data.length} style={ondisabled}>
+                      <li>Last &gt; &gt;</li>
                    </Link>
         }
         return (

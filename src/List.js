@@ -10,6 +10,7 @@ class List extends Component {
     constructor(props) {
         super(props);
         this.state = { count: 10 };
+        window.scrollTo( 0, 0 );
     }
 
     showMore() {
