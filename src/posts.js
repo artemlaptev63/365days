@@ -256,6 +256,22 @@ export default {
                 'assets/post1/image3.jpg'
             ]
         },
+        {
+            id: 17,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!',
+            title: 'Purple',
+            autor: 'Irina Manning',
+            mainImage: 'assets/post2/main-photo.jpg',
+            image1: 'assets/post2/image1.jpg',
+            image2: 'assets/post2/image2.jpg',
+            image3: 'assets/post2/image3.jpg',
+            images: [
+                'assets/post2/main-photo.jpg',
+                'assets/post2/image1.jpg',
+                'assets/post2/image2.jpg',
+                'assets/post2/image3.jpg'
+            ]
+        }
     ],
 
     // функция принимает номер поста и выводит нужный на Detail.js
