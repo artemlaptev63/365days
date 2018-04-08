@@ -12,7 +12,7 @@ class DetailContent extends Component {
     
 
     like() {   
-        if(this.state.like == 'null') {
+        if(String(this.state.like) === 'null') {
             this.setState({like: 'true'});
             localStorage.setItem(this.props.item, 'true');
         } else {
@@ -53,7 +53,7 @@ class DetailContent extends Component {
 
 
         let className;
-        if (post.id % 2 == 0) {
+        if (post.id % 2 === 0) {
             className = 'left-item-like';
         } else {
             className = 'right-item-like';

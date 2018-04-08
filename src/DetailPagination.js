@@ -82,7 +82,7 @@ class DetailPagination extends Component {
 
         var tenItems = posts.getPagination(this.state.paginationCountmin, this.state.paginationCountmax);
         var pagination = tenItems.map((item, index) => {
-            if (this.props.match.params.id == item.id) {
+            if (String(this.props.match.params.id) === String(item.id)) {
                 return <Link key={index}
                          to={/detail/ + item.id}
                          style={disabled}>
@@ -98,7 +98,7 @@ class DetailPagination extends Component {
         });
 
         var first;
-        if (this.props.match.params.id == 1) {
+        if (Number(this.props.match.params.id) === 1) {
             first = <Link to={'/detail/' + posts.data[0].id} style={disabled}>
                         <li>&lt; &lt; First</li>
                     </Link>
@@ -109,7 +109,7 @@ class DetailPagination extends Component {
         }
 
         var previous;
-        if (this.props.match.params.id == 1) {
+        if (Number(this.props.match.params.id) === 1) {
             previous = <Link to={'/detail/' + 1} style={disabled}>
                            <li>&lt; Previous</li>
                        </Link>
@@ -120,7 +120,7 @@ class DetailPagination extends Component {
         }
 
         var next;
-        if (this.props.match.params.id == posts.data.length) {
+        if (String(this.props.match.params.id) === String(posts.data.length)) {
             next = <Link to={'/detail/' + (+this.props.match.params.id + 1)} style={disabled}>
                       <li>Next &gt;</li>
                    </Link>
@@ -131,7 +131,7 @@ class DetailPagination extends Component {
         }
 
         var last;
-        if (this.props.match.params.id == posts.data.length) {
+        if (String(this.props.match.params.id) === String(posts.data.length)) {
             last = <Link to={'/detail/' + posts.data.length} style={disabled}>
                       <li>Last &gt; &gt;</li>
                    </Link>

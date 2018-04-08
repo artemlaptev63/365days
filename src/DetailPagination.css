@@ -1,6 +1,9 @@
 ul.pagination a {
     text-decoration: none;
 }
+ul.pagination a:hover {
+    opacity: 0.6;
+}
 ul.pagination li {
     display: inline;
     margin-right: 40px; 

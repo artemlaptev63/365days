@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import posts from './posts';
 import './ListItem.css';
 
 class ListItem extends Component {
@@ -9,7 +8,7 @@ class ListItem extends Component {
         this.state = { like: localStorage.getItem(this.props.item.id) };
     }
     like() {   
-        if(this.state.like == 'null') {
+        if(String(this.state.like) === 'null') {
             this.setState({like: 'true'});
             localStorage.setItem(this.props.item.id, 'true');
         } else {
@@ -35,7 +34,7 @@ class ListItem extends Component {
 
 
         let className;
-        if (this.props.item.id % 2 == 0) {
+        if (this.props.item.id % 2 === 0) {
             className = 'left-item-like';
         } else {
             className = 'right-item-like';
@@ -56,7 +55,7 @@ class ListItem extends Component {
 
 
     let item;
-    if (this.props.item.id % 2 == 0) {
+    if (this.props.item.id % 2 === 0) {
       item =  <div className='left-item'>
                 <div className='delimiter'></div>
                 <div className='flex'>

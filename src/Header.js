@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div id='header'>
         <div>
-            <img src='assets/logo@2x.png' />
+            <img src='assets/logo@2x.png' alt='logo-365'/>
         </div>
         <div className='form-for-email'>
             <p>Subscribe for weekly inspiration</p>
