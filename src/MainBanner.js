@@ -20,7 +20,7 @@ class MainBanner extends Component {
                     </div>
                     <div className='grid-row-2'>
                         <div className='grid-item logo'>
-                            <img src="assets/logo@2x.png" />
+                            <img src="assets/logo@2x.png" alt='logo-365'/>
                         </div>
                         <div className='grid-item desc'>
                             <p className='description'>

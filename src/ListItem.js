@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import posts from './posts';
 import './ListItem.css';
-// import Like from './Like';
 
 class ListItem extends Component {
   constructor(props) {
@@ -36,7 +35,7 @@ class ListItem extends Component {
 
 
         let className;
-        if (this.props.item.id % 2 === 0) {
+        if (this.props.item.id % 2 == 0) {
             className = 'left-item-like';
         } else {
             className = 'right-item-like';
@@ -57,32 +56,37 @@ class ListItem extends Component {
 
 
     let item;
-    if (this.props.item.id % 2 === 0) {
-      item =  <div className = 'left-item'>
+    if (this.props.item.id % 2 == 0) {
+      item =  <div className='left-item'>
                 <div className='delimiter'></div>
                 <div className='flex'>
-                  <div className='main-photo' style={mainPhotoItem}>
-                    <Link to={ this.props.path }>
+                  <Link className='main-photo-link' to={this.props.path}>
+                    <div className='main-photo' style={mainPhotoItem}>
                       <p className='photos-number-left'>#{this.props.item.id}</p>
                       <p className='link-to-detail-left'>View Gallery</p>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                   <div>
                     <div className="secondary-photo-left">
-                      <p style={secondaryPhoto1}></p>
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto1}></p>
+                      </Link>
                     </div>
                     <div className="secondary-photo-left">
-                      <p style={secondaryPhoto2}></p>
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto2}></p>
+                      </Link>
                     </div>
                     <div className="secondary-photo-left">
-                      <p style={secondaryPhoto3}></p>
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto3}></p>
+                      </Link>
                     </div>
                   </div>
                   <div className='about-image-left-item'>
                     <p><b>{ this.props.item.title }</b><br />
                        By <i>{ this.props.item.autor }</i></p>
-                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
-
+                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' />
                   </div>
                 </div>
               </div>
@@ -93,26 +97,31 @@ class ListItem extends Component {
                   <div className='about-image-right-item'>
                     <p><b>{ this.props.item.title }</b><br />
                        By <i>{ this.props.item.autor }</i></p>
-                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
-
+                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' />
                   </div>
                   <div>
                     <div className="secondary-photo-right">
-                      <p style={secondaryPhoto1}></p>
-                    </div>
-                    <div className="secondary-photo-right">
-                      <p style={secondaryPhoto2}></p>
-                    </div>
-                    <div className="secondary-photo-right">
-                      <p style={secondaryPhoto3}></p>
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto1}></p>
+                      </Link>
+                      </div>
+                      <div className="secondary-photo-right">
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto2}></p>
+                      </Link>
+                      </div>
+                      <div className="secondary-photo-right">
+                      <Link to={ this.props.path }>
+                        <p style={secondaryPhoto3}></p>
+                      </Link>
                     </div>
                   </div>
-                  <div className='main-photo' style={mainPhotoItem}>
-                    <Link to={ this.props.path }>
+                  <Link className='main-photo-link' to={this.props.path}>
+                    <div className='main-photo' style={mainPhotoItem}>
                       <p className='photos-number-right'>#{this.props.item.id}</p>
                       <p className='link-to-detail-right'>View Gallery</p>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
     }

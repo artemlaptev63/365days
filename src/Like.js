@@ -39,7 +39,7 @@ class Like extends Component {
 
         return (
             <div>
-                <img onClick = {this.like.bind(this)} className={className} src={likeIcon} />
+                <img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' />
             </div>
         );
     }

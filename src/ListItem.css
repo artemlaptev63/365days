@@ -21,9 +21,20 @@
   background-position: center center !important;
   height: 360px;
   flex: 2;
+  margin-top: 0px;
 }
-.secondary-photo-left, .secondary-photo-left {
+.main-photo-link {
+  height: 360px;
+  width: 60%;
+}
+.main-photo-link:hover {
+  opacity: 0.8;
+}
+.secondary-photo-left, .secondary-photo-right {
   flex: 1;
+}
+.secondary-photo-left:hover, .secondary-photo-right:hover {
+  opacity: 0.8;
 }
 .secondary-photo-left p {
   margin-bottom: 15px;

@@ -40,7 +40,8 @@ class DetailContent extends Component {
 
         var images = post.images.map((item, index) => {
             return <img src={item} 
-                        key={index}/>
+                        key={index}
+                        alt={item.title}/>
         });
 
         let likeIcon;
@@ -52,7 +53,7 @@ class DetailContent extends Component {
 
 
         let className;
-        if (post.id % 2 === 0) {
+        if (post.id % 2 == 0) {
             className = 'left-item-like';
         } else {
             className = 'right-item-like';
@@ -62,9 +63,9 @@ class DetailContent extends Component {
         return (
             <div id='detail-content'>
                 <div className='social-media'>
-                    <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} /></p>
-                    <p><img src='assets/icons/like-false.png' /></p>
-                    <p><img src='assets/icons/like-false.png' /></p>
+                    <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' /></p>
+                    <p><img src='assets/icons/like-false.png' alt='twitter' /></p>
+                    <p><img src='assets/icons/like-false.png' alt='instagram' /></p>
                 </div>
                 <div className='detail-description'>
                     <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
