@@ -10,9 +10,9 @@
   margin-bottom: 40px;
 }
 .delimiter {
-  margin-top: -10px;
-  margin-bottom: 50px;
-  height: 10px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  height: 14px;
   background-color: #000000; 
 }
 .main-photo {
@@ -27,14 +27,8 @@
   height: 360px;
   width: 60%;
 }
-.main-photo-link:hover {
-  opacity: 0.8;
-}
 .secondary-photo-left, .secondary-photo-right {
   flex: 1;
-}
-.secondary-photo-left:hover, .secondary-photo-right:hover {
-  opacity: 0.8;
 }
 .secondary-photo-left p {
   margin-bottom: 15px;
@@ -66,18 +60,17 @@
   font-size: 80px;
   margin: 0px;
   margin-left: 20px;
-  opacity: 0.7;
+  padding-bottom: 2px;
 }
 .link-to-detail-left {
   position: absolute;
   right: 0;
   bottom: 0;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px;
   margin-right: 30px;
   margin-bottom: 20px;
-  opacity: 0.7;
 }
 .photos-number-right {
   position: absolute;
@@ -87,26 +80,24 @@
   font-size: 80px;
   margin: 0px;
   margin-right: 20px;
-  opacity: 0.7;
+  padding-bottom: 2px;
 }
 .link-to-detail-right {
   position: absolute;
   left: 0;
   bottom: 0;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0px;
   margin-left: 30px;
   margin-bottom: 20px;
-  opacity: 0.7;
 }
 
 .photos-number-left:hover, .photos-number-right:hover {
-  opacity: 1;
+  text-decoration: underline;
 }
 .link-to-detail-left:hover, .link-to-detail-right:hover {
-  opacity: 1;
-  border-bottom: 1px solid #ffffff;
+  text-decoration: underline;
 }
 .about-image-left-item, .about-image-right-item {
   flex: 1;

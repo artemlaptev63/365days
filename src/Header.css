@@ -5,7 +5,7 @@
     padding: 40px 100px 30px 100px;
 }
 #header img {
-    width: 200px;
+    width: 180px;
 }
 #header .form-for-email {
     text-align: right;
@@ -14,11 +14,11 @@
     margin-top: -25px;
 }
 #header input {
+    font-family: 'Didot', sans-serif;
     padding: 15px 58px;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 0.5px;
     outline: none;
     margin-top: 10px;
-    font-weight: 200;
     width: 170px;
 }

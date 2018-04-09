@@ -7,13 +7,13 @@ ul.pagination a:hover {
 ul.pagination li {
     display: inline;
     margin-right: 40px; 
-    font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 100;
 }
 ul.pagination {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-top: 30px;
+    padding-bottom: 30px; 
     background-color: #efefef;
     margin-top: 0px;
     margin-bottom: 0px;

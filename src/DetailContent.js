@@ -64,8 +64,8 @@ class DetailContent extends Component {
             <div id='detail-content'>
                 <div className='social-media'>
                     <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' /></p>
-                    <p><img src='assets/icons/like-false.png' alt='twitter' /></p>
-                    <p><img src='assets/icons/like-false.png' alt='instagram' /></p>
+                    <p><img src='assets/icons/twitter.png' alt='twitter' /></p>
+                    <p><img src='assets/icons/instagram.png' alt='instagram' /></p>
                 </div>
                 <div className='detail-description'>
                     <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
