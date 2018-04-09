@@ -6,12 +6,12 @@ export default {
             title: 'Girls',
             autor: 'Evgeniya Lapteva',
             mainImage: 'assets/post1/main-photo.png',
-            image1: 'assets/post1/image2.jpg',
+            image1: 'assets/post1/image1.jpg',
             image2: 'assets/post1/image2.jpg',
             image3: 'assets/post1/image3.jpg',
             images: [
                 'assets/post1/main-photo.png',
-                'assets/post1/image1.jpg',
+                'assets/post1/image2.jpg',
                 'assets/post1/image2.jpg',
                 'assets/post1/image3.jpg'
             ]
@@ -134,12 +134,12 @@ export default {
             title: 'Girls',
             autor: 'Evgeniya Lapteva',
             mainImage: 'assets/post1/main-photo.png',
-            image1: 'assets/post1/image2.jpg',
+            image1: 'assets/post1/image1.jpg',
             image2: 'assets/post1/image2.jpg',
             image3: 'assets/post1/image3.jpg',
             images: [
                 'assets/post1/main-photo.png',
-                'assets/post1/image1.jpg',
+                'assets/post1/image2.jpg',
                 'assets/post1/image2.jpg',
                 'assets/post1/image3.jpg'
             ]
@@ -198,12 +198,12 @@ export default {
             title: 'Girls',
             autor: 'Evgeniya Lapteva',
             mainImage: 'assets/post1/main-photo.png',
-            image1: 'assets/post1/image2.jpg',
+            image1: 'assets/post1/image1.jpg',
             image2: 'assets/post1/image2.jpg',
             image3: 'assets/post1/image3.jpg',
             images: [
                 'assets/post1/main-photo.png',
-                'assets/post1/image1.jpg',
+                'assets/post1/image2.jpg',
                 'assets/post1/image2.jpg',
                 'assets/post1/image3.jpg'
             ]
@@ -246,12 +246,12 @@ export default {
             title: 'Girls',
             autor: 'Evgeniya Lapteva',
             mainImage: 'assets/post1/main-photo.png',
-            image1: 'assets/post1/image2.jpg',
+            image1: 'assets/post1/image1.jpg',
             image2: 'assets/post1/image2.jpg',
             image3: 'assets/post1/image3.jpg',
             images: [
                 'assets/post1/main-photo.png',
-                'assets/post1/image1.jpg',
+                'assets/post1/image2.jpg',
                 'assets/post1/image2.jpg',
                 'assets/post1/image3.jpg'
             ]
