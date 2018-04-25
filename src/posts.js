@@ -283,7 +283,15 @@ export default {
         }
         return null;
     },
-
+    getImage: function(id, numberOfPhoto) {
+        var post;
+        for (var i = 0; i < this.data.length; i++) {
+            if (this.data[i].id.toString() === id.toString()) {
+                post = this.data[i];
+            }
+        }
+        return post.images[numberOfPhoto];
+    },
     // функция берет последний пост и возвращает его
     getLastItem: function() {
         return this.data[this.data.length - 1];  

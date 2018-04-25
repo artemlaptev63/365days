@@ -6,6 +6,7 @@ import Footer from './Footer';
 import './DetailPagination.css';
 import DetailContent from './DetailContent';
 
+
 class DetailPagination extends Component {
 
     constructor(props) {
@@ -77,7 +78,8 @@ class DetailPagination extends Component {
         };
         var ondisabled = {
             color: 'black'
-        }
+        };
+
 
 
         var tenItems = posts.getPagination(this.state.paginationCountmin, this.state.paginationCountmax);
@@ -140,6 +142,9 @@ class DetailPagination extends Component {
                       <li>Last &gt; &gt;</li>
                    </Link>
         }
+
+
+        
         return (
           <div>
             <Header />
@@ -152,7 +157,8 @@ class DetailPagination extends Component {
                     {last}
                 </ul>
                 <div>
-                    <DetailContent item={this.props.match.params.id}/>    
+                    <DetailContent item={this.props.match.params.id}
+                                   imagesLength={post.images.length} />
                 </div>
                 <ul className='pagination'>
                     {first}

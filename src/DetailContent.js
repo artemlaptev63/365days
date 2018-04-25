@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import posts from './posts';
 import './DetailContent.css';
 import { TwitterShareButton } from 'react-share';
+import ViewPhotos from './ViewPhotos';
+
 // import { FacebookShareButton, TwitterShareButton } from 'react-share';
 // import { FacebookShareCount } from 'react-share';
 // import { FacebookIcon } from 'react-share';
@@ -10,7 +12,11 @@ import { TwitterShareButton } from 'react-share';
 class DetailContent extends Component {
     constructor(props) {
         super(props);
-        this.state = { like: localStorage.getItem(this.props.item) };
+        this.state = { 
+            like: localStorage.getItem(this.props.item),
+            numberOfPhoto: 0,
+            display: 'none' 
+        };
     }
 
     
@@ -24,11 +30,42 @@ class DetailContent extends Component {
             localStorage.setItem(this.props.item, 'null');
         }
     }
+    viewPhotos (index) {
+        this.setState({ numberOfPhoto: index });
+        this.setState({ display: 'block' });
+        console.log(index);
+    }
+
+
+
+    closeGallery() {
+        this.setState({ display: 'none' })
+    }
+    nextPhoto() {
+        if (this.state.numberOfPhoto.toString() === (this.props.imagesLength - 1).toString() ) {
+            this.setState({numberOfPhoto: 0})
+            return;
+        }
+        this.setState({numberOfPhoto: this.state.numberOfPhoto + 1})
+    }
+    prevPhoto() {
+        if (Number(this.state.numberOfPhoto) === 0) {
+            this.setState({numberOfPhoto: this.props.imagesLength - 1})
+            return;
+        }
+        this.setState({numberOfPhoto: this.state.numberOfPhoto - 1})
+    }
+
+
+
+
+
     componentWillMount() {
         localStorage.setItem(this.props.item, localStorage.getItem(this.props.item));
         this.setState({
             like: localStorage.getItem(this.props.item)
         })
+        this.setState({display: 'none'})
     }
     componentWillReceiveProps(nextProps) {
         localStorage.setItem(nextProps.item, localStorage.getItem(nextProps.item));
@@ -37,14 +74,14 @@ class DetailContent extends Component {
         })
     }
 
-
     render() {
         var post = posts.getItem(this.props.item);
 
         var images = post.images.map((item, index) => {
             return <img src={item} 
                         key={index}
-                        alt={item.title}/>
+                        alt={item.title}
+                        onClick={this.viewPhotos.bind(this, index)}/>
         });
 
         let likeIcon;
@@ -68,6 +105,12 @@ class DetailContent extends Component {
             cursor: 'pointer'
         }
 
+        var viewPhotos;
+        viewPhotos = <div>
+                        <ViewPhotos nextPhoto={this.nextPhoto.bind(this)} prevPhoto={this.prevPhoto.bind(this)} closeGallery={this.closeGallery.bind(this)} display={this.state.display} item={this.props.item} numberOfPhoto={this.state.numberOfPhoto}/>
+                     </div>    
+
+
         return (
             <div id='detail-content'>
                 <div className='social-media'>
@@ -85,6 +128,9 @@ class DetailContent extends Component {
                     <div className='all-images'>
                         {images}
                     </div>
+                </div>
+                <div>
+                    {viewPhotos}
                 </div>
             </div>
         );

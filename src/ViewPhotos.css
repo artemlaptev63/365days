@@ -1,0 +1,59 @@
+#showAllPhotos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showAllPhotos .closeGallery {
+    font-size: 50px;
+    font-weight: 900;
+    position: fixed;
+    top: 0px;
+    right: 15px;
+    opacity: 0.7;
+}
+#showAllPhotos p.thisImage {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#showAllPhotos img {
+    height: 80vh;
+}
+#showAllPhotos p.photoNavigationPrev {
+    position: fixed;
+    margin: 0px;
+    left: 20px;
+    top: 45%;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+#showAllPhotos p.photoNavigationNext {
+    position: fixed;
+    margin: 0px;
+    right: 20px;
+    top: 45%;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+#showAllPhotos p.photoNavigationPrev:hover,
+#showAllPhotos p.photoNavigationNext:hover,
+#showAllPhotos .closeGallery:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
