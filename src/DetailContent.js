@@ -33,7 +33,6 @@ class DetailContent extends Component {
     viewPhotos (index) {
         this.setState({ numberOfPhoto: index });
         this.setState({ display: 'block' });
-        console.log(index);
     }
 
 
@@ -92,6 +91,13 @@ class DetailContent extends Component {
         }
 
 
+        if (this.state.display === "none") {
+            document.body.style.overflow = 'visible';
+        } else {
+            document.body.style.overflow = 'hidden';
+        }
+
+
         let className;
         if (post.id % 2 === 0) {
             className = 'left-item-like';
@@ -112,21 +118,23 @@ class DetailContent extends Component {
 
 
         return (
-            <div id='detail-content'>
-                <div className='social-media'>
-                    <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' /></p>
-                    <TwitterShareButton style={twitterButton} url={'https://365daysofphotos.netlify.com/#/detail/' + post.id}
-                                        title={post.description}>
-                        <p><img src='assets/icons/twitter.png' alt='twitter' /></p>
-                    </TwitterShareButton>
-                    <p><img src='assets/icons/instagram.png' alt='instagram' /></p>
-                </div>
-                <div className='detail-description'>
-                    <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
-                    <p className='autor'>By <i>{post.autor}</i></p>
-                    <p className='description'>{post.description}</p>
-                    <div className='all-images'>
-                        {images}
+            <div>
+                <div id='detail-content'>
+                    <div className='social-media'>
+                        <p><img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' /></p>
+                        <TwitterShareButton style={twitterButton} url={'https://365daysofphotos.netlify.com/#/detail/' + post.id}
+                                            title={post.description}>
+                            <p><img src='assets/icons/twitter.png' alt='twitter' /></p>
+                        </TwitterShareButton>
+                        <p><img src='assets/icons/instagram.png' alt='instagram' /></p>
+                    </div>
+                    <div className='detail-description'>
+                        <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
+                        <p className='autor'>By <i>{post.autor}</i></p>
+                        <p className='description'>{post.description}</p>
+                        <div className='all-images'>
+                            {images}
+                        </div>
                     </div>
                 </div>
                 <div>

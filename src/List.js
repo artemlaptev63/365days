@@ -14,7 +14,7 @@ class List extends Component {
     }
 
     showMore() {
-        this.setState({count: this.state.count + 10})
+        this.setState({ count: this.state.count + 10 })
     }
 
     render() {
