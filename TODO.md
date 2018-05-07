@@ -1,4 +1,3 @@
-TODAY
 [ ] 4H fix image slider
 [ ] 2H hook up email form to mailchimp
 [ ] 30M get domain name for website
