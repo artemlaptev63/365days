@@ -1,4 +1,4 @@
-#showAllPhotos {
+/* #showAllPhotos {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,24 +20,23 @@
     right: 15px;
     opacity: 0.7;
 }
-
+#showAllPhotos div.thisImage {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 #showAllPhotos img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 80%;
+    max-width: 70%;
+    min-height: 40%;
+    width: auto;
+    max-height: 90vh;
     height: auto;
-    min-height: 400px;
-    max-height: 550px;
 }
-#showAllPhotos p.thisImage {
-    margin: 0px;
-}
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 400px) {
     #showAllPhotos img {
-        width: 100%;
-        height: auto;
-        max-height: 100%;
+        min-height: 30%;
     }
 }
 #showAllPhotos p.photoNavigationPrev {
@@ -76,4 +75,81 @@
 
 
 
+ */
+ #showAllPhotos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    text-align: center;
+    color: #ffffff;
+    min-width: 1200px;
+}
+#showAllPhotos div.container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#showAllPhotos img {
+    max-width: 70%;
+    width: auto;
+    max-height: 90vh;
+    height: auto;
+}
+@media screen and (max-width: 450px) {
+    #showAllPhotos img {
+        width: 80%;
+        height: auto;
+        max-height: 200vh;
+    }
+}
+#showAllPhotos .closeGallery {
+    font-size: 50px;
+    font-weight: 900;
+    position: fixed;
+    top: 0px;
+    right: 15px;
+    opacity: 0.7;
+}
 
+#showAllPhotos p.photoNavigationPrev {
+    position: fixed;
+    margin: 0px;
+    left: 20px;
+    top: 45%;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+#showAllPhotos p.photoNavigationNext {
+    position: fixed;
+    margin: 0px;
+    right: 20px;
+    top: 45%;
+    font-size: 50px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+#showAllPhotos p.photoNavigationPrev:hover,
+#showAllPhotos p.photoNavigationNext:hover,
+#showAllPhotos .closeGallery:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#showAllPhotos p.photoNavigationPrev,
+#showAllPhotos p.photoNavigationNext,
+#showAllPhotos .closeGallery {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
