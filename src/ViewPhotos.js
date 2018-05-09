@@ -13,19 +13,24 @@ class ViewPhotos extends Component {
         };
 
         return (
-            <div id="showAllPhotos" style={show}>
-                <div className="modalWindow">
-                    <div>
-                        <div className="closeGallery" onClick={this.props.closeGallery}>&#215;</div>
-                    </div>
-                    <div>
-                        <p onClick={this.props.prevPhoto} className='photoNavigationPrev'>&#60;</p>
-                        <p className='thisImage'>
-                            <img onClick={this.props.nextPhoto} src={image} alt={image} />
-                        </p>  
-                        <p onClick={this.props.nextPhoto} className='photoNavigationNext'>&#62;</p>
-                    </div>
+            // <div id="showAllPhotos" style={show}>
+            //     <div className="closeGallery" onClick={this.props.closeGallery}>&#215;</div>
+            //     <p onClick={this.props.prevPhoto} className='photoNavigationPrev'>&#60;</p>
+            //     <p onClick={this.props.nextPhoto} className='photoNavigationNext'>&#62;</p>
+
+
+            //     <div className='thisImage'>
+            //         <img onClick={this.props.nextPhoto} src={image} alt={image} />
+            //     </div>  
+            // </div>
+
+            <div id='showAllPhotos' style={show}>
+                <div className='container'>
+                    <img onClick={this.props.nextPhoto} src={image} alt="" />
                 </div>
+                <div className="closeGallery" onClick={this.props.closeGallery}>&#215;</div>
+                <p onClick={this.props.prevPhoto} className='photoNavigationPrev'>&#60;</p>
+                <p onClick={this.props.nextPhoto} className='photoNavigationNext'>&#62;</p>
             </div>
         );
     }
