@@ -1,5 +1,6 @@
-[ ] 4H fix image slider
+[x] 4H fix image slider
 [ ] 2H hook up email form to mailchimp
+[ ] clean the code
 [ ] 30M get domain name for website
 [ ] 30M rename `List.js` to something more specific like `PhotographerList.js`
 [ ] 2H use Helmet https://github.com/nfl/react-helmet
