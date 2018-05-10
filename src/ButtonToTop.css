@@ -10,7 +10,8 @@
     margin-bottom: 100px;
     padding: 0px;
     padding-bottom: 3px;
-     font-family: 'Didot', sans-serif;
+    font-family: 'Didot', sans-serif;
+    background-color: white;
 }
 .button-go-up button:hover {
     text-decoration: underline;;

@@ -4,14 +4,17 @@ import './MainBanner.css';
 
 class MainBanner extends Component {
     render() {
+        // записываем в переменную последний пост
         var lastItem = posts.getLastItem();
         
+        // записываем в переменную стиль с background из главного фото последнего поста
         var mainBanner = {
             background: 'url('+ lastItem.mainImage +') no-repeat'
         }
+
         return (
             <div>
-                <div style={mainBanner} id='main-banner'>
+                <div style={ mainBanner } id='main-banner'>
                     <div className='grid-row-1'>
                         <div className='grid-item about-image'>
                             <p className='autor'>By <i>{ lastItem.autor }</i></p>

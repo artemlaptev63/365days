@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import './ButtonGoBackToTop.css';
+import './ButtonToTop.css';
 
 class ButtonToTop extends Component {
+
+    // метод прокручивает страницу вверх
     goUp() {
         window.scrollTo( 0, 0 );     
     }   
+    
     render() {
         return (
             <div className='button-go-up'>
