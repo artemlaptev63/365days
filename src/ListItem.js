@@ -4,42 +4,55 @@ import './ListItem.css';
 
 class ListItem extends Component {
   constructor(props) {
-        super(props);
-        this.state = { like: localStorage.getItem(this.props.item.id) };
+      super(props);
+      // состояние лайка берем из localStorage
+      this.state = { like: localStorage.getItem(this.props.item.id) };
     }
+
+    // метод для сохранения состояния лайка
     like() {   
-        if(String(this.state.like) === 'null') {
-            this.setState({like: 'true'});
-            localStorage.setItem(this.props.item.id, 'true');
-        } else {
-            this.setState({like: 'null'});
-            localStorage.setItem(this.props.item.id, 'null');
-        }
+      // если условие верно устанавливаем состояние лайка true
+      // и записываем состояние в localStorage
+      if(String(this.state.like) === 'null') {
+        this.setState({ like: 'true' });
+        localStorage.setItem(this.props.item.id, 'true');
+      // в противном случае устанавливаем состояние лайка null
+      // и записываем состояние в localStorage
+      } else {
+        this.setState({ like: 'null' });
+        localStorage.setItem(this.props.item.id, 'null');
+      }
     }
+
+    // метод вызывается перед render
     componentWillMount() {
-        localStorage.setItem(this.props.item.id, localStorage.getItem(this.props.item.id));
-        this.setState({
-            like: localStorage.getItem(this.props.item.id)
-        })
+      // заносим данные в localStorage 
+      localStorage.setItem(this.props.item.id, localStorage.getItem(this.props.item.id));
+      // изменяем state
+      this.setState({
+        like: localStorage.getItem(this.props.item.id)
+      })
     }
 
   
   render() { 
-  let likeIcon;
-        if (this.state.like !== "true") {
-            likeIcon = 'assets/icons/like-false.png';
-        } else {
-            likeIcon = 'assets/icons/like-true.png';
-        }
+    // в зависимости от состояния выводим картинку лайка
+    let likeIcon;
+    if (this.state.like !== "true") {
+      likeIcon = 'assets/icons/like-false.png';
+    } else {
+      likeIcon = 'assets/icons/like-true.png';
+    }
 
-
-        let className;
-        if (this.props.item.id % 2 === 0) {
-            className = 'left-item-like';
-        } else {
-            className = 'right-item-like';
-        }
-  
+    // классы для img-like с четными и нечетными id
+    let likeStyle;
+    if (this.props.item.id % 2 === 0) {
+      likeStyle = 'left-item-like';
+    } else {
+      likeStyle = 'right-item-like';
+    }
+    
+    // записываем в переменные img (в листе выводим 4 фото)
     var mainPhotoItem = {
       background: 'url('+ this.props.item.mainImage +') no-repeat'
     }
@@ -53,7 +66,7 @@ class ListItem extends Component {
       background: 'url('+ this.props.item.image3 +') no-repeat'
     } 
 
-
+    // чередуем возвращаемую разметку
     let item;
     if (this.props.item.id % 2 === 0) {
       item =  <div className='left-item'>
@@ -84,8 +97,8 @@ class ListItem extends Component {
                   </div>
                   <div className='about-image-left-item'>
                     <p><b>{ this.props.item.title }</b><br />
-                       By <i>{ this.props.item.autor }</i></p>
-                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' />
+                      By <i>{ this.props.item.autor }</i></p>
+                    <img onClick = {this.like.bind(this)} className={likeStyle} src={likeIcon} alt='like' />
                   </div>
                 </div>
               </div>
@@ -95,8 +108,8 @@ class ListItem extends Component {
                 <div className='flex'>
                   <div className='about-image-right-item'>
                     <p><b>{ this.props.item.title }</b><br />
-                       By <i>{ this.props.item.autor }</i></p>
-                    <img onClick = {this.like.bind(this)} className={className} src={likeIcon} alt='like' />
+                      By <i>{ this.props.item.autor }</i></p>
+                    <img onClick = {this.like.bind(this)} className={likeStyle} src={likeIcon} alt='like' />
                   </div>
                   <div>
                     <div className="secondary-photo-right">

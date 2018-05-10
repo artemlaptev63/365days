@@ -33,10 +33,7 @@ div#detail-content .autor {
     margin-top: 0px;
     font-size: 20px;
 }
-/*div#detail-content .autor i {
-    color: #001cd9;
-}
-*/div#detail-content .number-of-item {
+div#detail-content .number-of-item {
     font-size: 150px;
     margin-bottom: 0px;
     margin-top: 100px;

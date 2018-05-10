@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import DetailPagination from './DetailPagination';
-import List from './List';
+import PhotographerList from './PhotographerList';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={List} />
+          <Route exact path="/" component={PhotographerList} />
           <Route path="/detail/:id" component={DetailPagination} />
         </div>
       </Router>

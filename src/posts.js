@@ -274,6 +274,7 @@ export default {
         }
     ],
 
+
     // функция принимает номер поста и выводит нужный на Detail.js
     getItem: function(id) {
         for (var i = 0; i < this.data.length; i++) {
@@ -283,6 +284,9 @@ export default {
         }
         return null;
     },
+
+
+    // функция принимает на вход номер поста и номер фотографии которую нужно отобразить в слайдере ViewPhotos.js
     getImage: function(id, numberOfPhoto) {
         var post;
         for (var i = 0; i < this.data.length; i++) {
@@ -292,17 +296,22 @@ export default {
         }
         return post.images[numberOfPhoto];
     },
+
+
     // функция берет последний пост и возвращает его
     getLastItem: function() {
         return this.data[this.data.length - 1];  
     },
 
-    // перебираем все элементы массива и записываем их в новый массиы в обратном порядке, возвращаем по 10 item
+
+    // перебираем все элементы массива и записываем их в новый массив в обратном порядке, возвращаем по 10 постов
     getReverseArray: function(num) {
+        // записываем в новый массив явно 
         var reverseArray = [];
         for (var i = this.data.length - 1; i >= 0; i--) {
           reverseArray.push(this.data[i]);
         }
+        // записываем в showArray посты до num(нужное кол-во постов)
         var showArray = [];
         if (num > this.data.length) {
             num = num - (num - this.data.length);
@@ -312,7 +321,9 @@ export default {
         }
         return showArray;
     },
-    // получаем элементы пагинации
+
+
+    // получаем элементы пагинации от min до max
     getPagination: function(min, max) {
         var paginationArray = [];
         for (var i = min; i <= max; i++) {

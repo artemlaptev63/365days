@@ -152,7 +152,7 @@ div.right-item .right-item-like {
   width: 30px;
   margin-bottom: 20px;
 }
-div.right-item .left-item-like:hover, div.right-item .right-item-like:hover {
+div.left-item .left-item-like:hover, div.right-item .right-item-like:hover {
   cursor: pointer;
 } 
 /*end style for likes*/
