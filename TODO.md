@@ -1,3 +1,4 @@
+
 [x] 4H fix image slider
 [ ] 2H hook up email form to mailchimp
 [x] 6H clean the code
@@ -9,3 +10,4 @@
 [ ] 1H try to install eslint
 [ ] 30M learn English word list
 [ ] use 2 spaces for indentation (DO WITH NICK)
+
