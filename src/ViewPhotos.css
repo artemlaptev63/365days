@@ -21,18 +21,49 @@
     height: 100%;
 }
 #showAllPhotos img {
-    max-width: 70%;
+    max-width: 100%;
     width: auto;
-    max-height: 90vh;
+    max-height: 100%;
     height: auto;
 }
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 850px) {
+    #showAllPhotos {
+        background-color: black;
+    }
+    #showAllPhotos p.photoNavigationPrev,
+    #showAllPhotos p.photoNavigationNext {
+        display: none;
+    }
+} */
+
+@media screen and (orientation:portrait) and (max-width: 600px) {
     #showAllPhotos img {
-        width: 80%;
         height: auto;
-        max-height: 200vh;
+        width: 100%;
+    }
+    #showAllPhotos {
+        background-color: black;
+    }
+    #showAllPhotos p.photoNavigationPrev,
+    #showAllPhotos p.photoNavigationNext {
+        display: none;
     }
 }
+@media screen and (orientation:landscape) and (max-width: 800px)  {
+    #showAllPhotos img {
+        max-height: 100%;
+        width: auto;
+    }
+    #showAllPhotos {
+        background-color: black;
+    }
+    #showAllPhotos p.photoNavigationPrev,
+    #showAllPhotos p.photoNavigationNext {
+        display: none;
+    }
+}
+
+
 #showAllPhotos .closeGallery {
     font-size: 50px;
     font-weight: 900;

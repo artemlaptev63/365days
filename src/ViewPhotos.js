@@ -3,6 +3,7 @@ import posts from './posts';
 import './ViewPhotos.css';
 
 class ViewPhotos extends Component {
+
     render() {
  
         // получаем фото на которое кликаем, в метод передаем id поста и номер фото
@@ -12,7 +13,8 @@ class ViewPhotos extends Component {
         var show = {
             display: this.props.display
         };
-
+        
+        
         return (
             <div id='showAllPhotos' style={show}>
                 <div className='container'>
