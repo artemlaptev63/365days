@@ -106,7 +106,7 @@ class DetailContent extends Component {
         var images = post.images.map((item, index) => {
             return <img src={item} 
                         key={index}
-                        alt={item.title}
+                        alt={post.title}
                         onClick={this.viewPhotos.bind(this, index)}/>
         });
 

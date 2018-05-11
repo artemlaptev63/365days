@@ -10,4 +10,5 @@
 [ ] 1H try to install eslint
 [ ] 30M learn English word list
 [ ] use 2 spaces for indentation (DO WITH NICK)
+[ ] add events for phone-touch-events
 
