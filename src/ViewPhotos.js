@@ -3,9 +3,9 @@ import posts from './posts';
 import './ViewPhotos.css';
 
 class ViewPhotos extends Component {
-
+    
     render() {
- 
+        
         // получаем фото на которое кликаем, в метод передаем id поста и номер фото
         var image = posts.getImage(this.props.itemId, this.props.numberOfPhoto);
 
