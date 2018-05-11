@@ -109,7 +109,7 @@ class DetailContent extends Component {
                         alt={item.title}
                         onClick={this.viewPhotos.bind(this, index)}/>
         });
-        
+
         // в зависимости от состояния выводим картинку лайка
         let likeIcon;
         if (this.state.like !== "true") {
@@ -139,7 +139,6 @@ class DetailContent extends Component {
             outline: 'none',
             cursor: 'pointer'
         }
-
         return (
             <div>
                 <div id='detail-content'>
@@ -171,7 +170,6 @@ class DetailContent extends Component {
                     </div>
                 </div>
                 <div>
-                    {/* передаем в слайдер данные и методы */}
                     <ViewPhotos 
                         nextPhoto={this.nextPhoto.bind(this)} 
                         prevPhoto={this.prevPhoto.bind(this)} 
