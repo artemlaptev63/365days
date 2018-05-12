@@ -4,6 +4,8 @@ import './MainBanner.css';
 
 class MainBanner extends Component {
     render() {
+        // включаем прокрутку
+        document.body.style.overflow = 'visible';
         // записываем в переменную последний пост
         var lastItem = posts.getLastItem();
         
