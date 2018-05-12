@@ -26,15 +26,12 @@
     max-height: 100%;
     height: auto;
 }
-/* @media screen and (max-width: 850px) {
+@media screen and (max-width: 767px) {
     #showAllPhotos {
-        background-color: black;
+        overflow: visible !important;
+        min-width: auto;
     }
-    #showAllPhotos p.photoNavigationPrev,
-    #showAllPhotos p.photoNavigationNext {
-        display: none;
-    }
-} */
+}
 
 @media screen and (orientation:portrait) and (max-width: 600px) {
     #showAllPhotos img {

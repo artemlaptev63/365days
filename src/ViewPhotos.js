@@ -1,21 +1,7 @@
 import React, { Component } from 'react';
 import posts from './posts';
 import './ViewPhotos.css';
-window.addEventListener('load', function () {
-  var startX, startY, endX, endY, swipearea;
-  swipearea = document.getElementById('showAllPhotos')
-  swipearea.addEventListener('touchstart', function (e) {
-    startX = e.changedTouches[0].clientX
-    startY = e.changedTouches[0].clientY
-  }, false)
-  swipearea.addEventListener('touchend', function (e) {
-    endX = e.changedTouches[0].clientX
-    endY = e.changedTouches[0].clientY
-    if (endX - startX >= 30 && (Math.abs(endY - startY) <= 200)) {
-      console.log('hi');
-    }
-  }, false)
-}, false)
+
 class ViewPhotos extends Component {
 
 
