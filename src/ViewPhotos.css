@@ -31,6 +31,10 @@
         overflow: visible !important;
         min-width: auto;
     }
+    #showAllPhotos .closeGallery {
+        font-size: 100px !important;
+        font-weight: 900 !important;
+    }
 }
 
 @media screen and (orientation:portrait) and (max-width: 600px) {
