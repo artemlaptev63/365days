@@ -13,16 +13,16 @@ import ViewPhotos from './ViewPhotos';
 class DetailContent extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             // берем состояние из localStorage 
             like: localStorage.getItem(this.props.itemId),
             // состояние по умолчанию
             numberOfPhoto: 0,
-            viewPhotosDisplay: 'none' 
+            viewPhotosDisplay: 'none'
         };
     }
 
-    
+
     // метод для сохранения состояния лайка
     like() {
         // если условие верно устанавливаем состояние лайка true
@@ -30,8 +30,8 @@ class DetailContent extends Component {
         if (String(this.state.like) === 'null') {
             this.setState({ like: 'true' });
             localStorage.setItem(this.props.itemId, 'true');
-        // в противном случае устанавливаем состояние лайка null
-        // и записываем состояние в localStorage
+            // в противном случае устанавливаем состояние лайка null
+            // и записываем состояние в localStorage
         } else {
             this.setState({ like: 'null' });
             localStorage.setItem(this.props.itemId, 'null');
@@ -41,7 +41,7 @@ class DetailContent extends Component {
 
     // открытие слайдера ViewPhotos.js
     // при клике устанавливаем состояние 
-    viewPhotos (index) {
+    viewPhotos(index) {
         this.setState({ numberOfPhoto: index });
         this.setState({ viewPhotosDisplay: 'block' });
     }
@@ -56,7 +56,7 @@ class DetailContent extends Component {
     // следующее фото 
     nextPhoto() {
         // если фото последнее, обнуляем состояние и открываем первое фото
-        if (this.state.numberOfPhoto.toString() === (this.props.imagesLength - 1).toString() ) {
+        if (this.state.numberOfPhoto.toString() === (this.props.imagesLength - 1).toString()) {
             this.setState({ numberOfPhoto: 0 })
             return;
         }
@@ -104,10 +104,10 @@ class DetailContent extends Component {
 
         // выводим все фото текущего поста
         var images = post.images.map((item, index) => {
-            return <img src={item} 
-                        key={index}
-                        alt={post.title}
-                        onClick={this.viewPhotos.bind(this, index)}/>
+            return <img src={item}
+                key={index}
+                alt={post.title}
+                onClick={this.viewPhotos.bind(this, index)} />
         });
 
         // в зависимости от состояния выводим картинку лайка
@@ -121,8 +121,10 @@ class DetailContent extends Component {
         // в зависимости от состояния включаем и отключаем прокрутку
         if (this.state.viewPhotosDisplay === "none") {
             document.body.style.overflow = 'visible';
+            document.body.style.position = 'static';
         } else {
             document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
         }
 
         // присваиваем классы постам с четными и нечетными id
@@ -132,7 +134,7 @@ class DetailContent extends Component {
         } else {
             className = 'right-item-like';
         }
-        
+
         // стиль для иконки Twitter
         var twitterButton = {
             width: '30px',
@@ -144,14 +146,14 @@ class DetailContent extends Component {
                 <div id='detail-content'>
                     <div className='social-media'>
                         <p>
-                            <img onClick = {this.like.bind(this)} 
-                                 className={className} 
-                                 src={likeIcon} 
-                                 alt='like' />
+                            <img onClick={this.like.bind(this)}
+                                className={className}
+                                src={likeIcon}
+                                alt='like' />
                         </p>
-                        <TwitterShareButton style={twitterButton} 
-                                            url={'https://365daysofphotos.netlify.com/#/detail/' + post.id}
-                                            title={post.description}>
+                        <TwitterShareButton style={twitterButton}
+                            url={'https://365daysofphotos.netlify.com/#/detail/' + post.id}
+                            title={post.description}>
                             <p>
                                 <img src='assets/icons/twitter.png' alt='twitter' />
                             </p>
@@ -170,12 +172,12 @@ class DetailContent extends Component {
                     </div>
                 </div>
                 <div>
-                    <ViewPhotos 
-                        nextPhoto={this.nextPhoto.bind(this)} 
-                        prevPhoto={this.prevPhoto.bind(this)} 
-                        closeGallery={this.closeGallery.bind(this)} 
-                        display={this.state.viewPhotosDisplay} 
-                        itemId={this.props.itemId} 
+                    <ViewPhotos
+                        nextPhoto={this.nextPhoto.bind(this)}
+                        prevPhoto={this.prevPhoto.bind(this)}
+                        closeGallery={this.closeGallery.bind(this)}
+                        display={this.state.viewPhotosDisplay}
+                        itemId={this.props.itemId}
                         numberOfPhoto={this.state.numberOfPhoto}
                     />
                 </div>

@@ -21,4 +21,19 @@
     outline: none;
     margin-top: 10px;
     width: 170px;
+    border: none;
+}
+#header .form-for-email button {
+    background-color: #ffffff !important;
+    font-family: 'Didot', sans-serif;
+    padding: 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    outline: none;
+    margin-top: 10px;
+    border: none;
+    margin-left: 2px;
+}
+#header .form-for-email button:hover {
+    cursor: pointer;
 }

@@ -36,14 +36,18 @@ class ViewPhotos extends Component {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
       if (xDiff > 0) {
         this.props.nextPhoto();
+        console.log('next');
       } else {
         this.props.prevPhoto();
+        console.log('prev');
       }
     } else {
       if (yDiff > 0) {
         this.props.closeGallery();
+        console.log('close');
       } else {
         this.props.closeGallery();
+        console.log('close');
       }
     }
     /* reset values */
