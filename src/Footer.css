@@ -2,6 +2,7 @@
     background-color: black;
     color: #ffffff;
     font-size: 17px;
+    position: relative;
 }
 #footer .flex {
     display: flex;
@@ -37,4 +38,11 @@
     margin-bottom: 0px;
     padding-bottom: 50px;
     letter-spacing: 1.5px;
+}
+#footer .version {
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+    margin-bottom: 0px;
 }

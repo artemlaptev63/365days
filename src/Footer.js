@@ -7,17 +7,18 @@ class Footer extends Component {
             <div id='footer'>
                 <div className='flex'>
                     <div className='logo'>
-                        <img src="assets/logo@2x.png" alt='logo-365'/>
+                        <img src="assets/logo@2x.png" alt='logo-365' />
                     </div>
                     <div className='write-us'>
                         <p>
                             Send your submissions to <br />
-                                <a href='mailto:365day.photography@gmail.com'><i>365day.photography@gmail.com</i></a> <br />
+                            <a href='mailto:365day.photography@gmail.com'><i>365day.photography@gmail.com</i></a> <br />
                             for a chance to be featured. <br />
                         </p>
                     </div>
                 </div>
                 <p className='to-instagram'>Follow us on Instagram: <a href='mailto:365day.photography@gmail.com'><i>@365days.photography</i></a></p>
+                <p className='version'>v1.0.1</p>
             </div>
         );
     }

@@ -14,4 +14,5 @@
 [ ] fix 'open image in new tab'
 [ ] remove # from url
 [ ] fix zoom on phones(not important)
+[ ] fix main-photo on bigger screens
 
