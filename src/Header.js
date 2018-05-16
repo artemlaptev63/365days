@@ -3,8 +3,11 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import SimpleForm from './MailchimpForm';
 
+
 class Header extends Component {
+
   render() {
+
     return (
       <div id='header'>
         <div>
@@ -14,10 +17,6 @@ class Header extends Component {
         </div>
         <div className='form-for-email'>
           <p>Subscribe for weekly inspiration</p>
-          {/* <form>
-          <input type='email' placeholder="Enter Your Email" />
-          <button>SUBSCRIBE</button>
-          </form> */}
           <SimpleForm />
         </div>
       </div>

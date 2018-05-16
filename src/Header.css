@@ -22,6 +22,7 @@
     margin-top: 10px;
     width: 170px;
     border: none;
+    text-align: center;
 }
 #header .form-for-email button {
     background-color: #ffffff !important;
