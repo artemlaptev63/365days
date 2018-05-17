@@ -12,7 +12,6 @@
 [x] use 2 spaces for indentation (DO WITH NICK)
 [x] add events for phone-touch-events
 [ ] fix 'open image in new tab'
-[ ] remove # from url
 [ ] fix zoom on phones(not important)
 [ ] fix main-photo on bigger screens
 [ ] проверить SEO
