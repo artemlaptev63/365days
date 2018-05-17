@@ -12,7 +12,7 @@ class Header extends Component {
       <div id='header'>
         <div>
           <Link to='/'>
-            <img src='assets/logo@2x.png' alt='logo-365' />
+            <img src='../assets/logo@2x.png' alt='logo-365' />
           </Link>
         </div>
         <div className='form-for-email'>

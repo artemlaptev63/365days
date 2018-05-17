@@ -12,13 +12,13 @@ class Footer extends Component {
                     <div className='write-us'>
                         <p>
                             Send your submissions to <br />
-                            <a href='mailto:365day.photography@gmail.com'><i>365day.photography@gmail.com</i></a> <br />
+                            <a href='mailto:hello.legendaryphotographers@gmail.com'><i>hello.legendaryphotographers@gmail.com</i></a> <br />
                             for a chance to be featured. <br />
                         </p>
                     </div>
                 </div>
                 <p className='to-instagram'>Follow us on Instagram: <a href='mailto:365day.photography@gmail.com'><i>@365days.photography</i></a></p>
-                <p className='version'>v1.0.3</p>
+                <p className='version'>v1.0.5</p>
             </div>
         );
     }
