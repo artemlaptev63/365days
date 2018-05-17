@@ -178,6 +178,7 @@ class DetailContent extends Component {
             <p className='description'>{post.description}</p>
             <div className='all-images'>
               {images}
+              <img src='assets/post1/image1.jpg' alt='dd' />
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ class Footer extends Component {
                     </div>
                 </div>
                 <p className='to-instagram'>Follow us on Instagram: <a href='mailto:365day.photography@gmail.com'><i>@365days.photography</i></a></p>
-                <p className='version'>v1.0.6</p>
+                <p className='version'>v1.0.7</p>
             </div>
         );
     }
