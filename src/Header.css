@@ -14,7 +14,7 @@
     margin-top: -25px;
 }
 #header input {
-    font-family: 'Didot', sans-serif;
+    font-family: 'Didot', 'Playfair Display', sans-serif;
     padding: 15px 58px;
     font-size: 20px;
     letter-spacing: 0.5px;
@@ -26,7 +26,7 @@
 }
 #header .form-for-email button {
     background-color: #ffffff !important;
-    font-family: 'Didot', sans-serif;
+    font-family: 'Didot', 'Playfair Display', sans-serif;
     padding: 15px;
     font-size: 20px;
     letter-spacing: 0.5px;

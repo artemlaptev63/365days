@@ -12,6 +12,11 @@ div#main-banner {
     padding-left: 120px;
     padding-bottom: 50px;
 }
+@media screen and (min-width: 1300px) {
+    #main-banner .grid-row-2 {
+        padding-bottom: 150px;
+    }
+}
 #main-banner .grid-item {
     flex: 1;
 }

@@ -11,9 +11,13 @@
 [x] 1H try to install eslint
 [x] use 2 spaces for indentation (DO WITH NICK)
 [x] add events for phone-touch-events
-[ ] fix 'open image in new tab'
-[ ] fix zoom on phones(not important)
-[ ] fix main-photo on bigger screens
-[ ] проверить SEO
-[ ] fix link to instagram
+[-] fix 'open image in new tab'
+[x] fix main-photo on bigger screens
+[-] problem with SEO (hashHistory #)
+[x] fix link to instagram
+[x] fix fonts
+[ ] fix logo
+[ ] add icon for title
+[ ] fix logo instagram
+
 

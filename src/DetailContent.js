@@ -168,9 +168,9 @@ class DetailContent extends Component {
                 <img src='../assets/icons/twitter.png' alt='twitter' />
               </p>
             </TwitterShareButton>
-            <p>
+            <a href='https://www.instagram.com/legendaryphotography.magazine/' target="_blank" rel="noopener noreferrer">
               <img src='../assets/icons/instagram.png' alt='instagram' />
-            </p>
+            </a>
           </div>
           <div className='detail-description'>
             <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>

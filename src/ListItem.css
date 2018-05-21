@@ -19,7 +19,8 @@
   position: relative;
   background-size: cover !important;
   background-position: center center !important;
-  height: 360px;
+  /* height: 360px; */
+  height: 450px;
   flex: 2;
   margin-top: 0px;
 }
@@ -34,8 +35,10 @@
   margin-bottom: 15px;
   margin-top: 0px;
   margin-left: 15px;
-  width: 155px;
-  height: 110px;
+  /* width: 155px; */
+  /* height: 110px; */
+  width: 185px;
+  height: 140px;
   background-size: cover !important;
   background-position: center center !important;
 }
@@ -43,8 +46,10 @@
   margin-bottom: 15px;
   margin-top: 0px;
   margin-right: 15px;
-  width: 155px;
-  height: 110px;
+  /* width: 155px;
+  height: 110px; */
+  width: 185px;
+  height: 140px;
   background-size: cover !important;
   background-position: center center !important;
 }

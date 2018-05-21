@@ -2,7 +2,7 @@
     text-align: center;
 }
 .show-more button {
-    font-family: 'Didot', sans-serif;
+    font-family: 'Didot', 'Playfair Display',  sans-serif;
     font-size: 16px;
     font-weight: 900;
     border: 1px solid black;
