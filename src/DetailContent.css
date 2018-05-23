@@ -1,10 +1,8 @@
 div#detail-content {
-    display: flex;
     padding-left: 100px;
     padding-right: 100px;
 }
 div#detail-content .social-media {
-    flex: 1;
     margin-top: 160px;
 }
 div#detail-content .social-media img {
@@ -14,8 +12,14 @@ div#detail-content .social-media p {
     margin-bottom: 40px;
 }
 div#detail-content .detail-description {
-    flex: 4;
     text-align: right;
+}
+div#detail-content .quote {
+    margin-left: 30%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
 }
 div#detail-content .left-item-like,
 div#detail-content .right-item-like {
@@ -25,7 +29,7 @@ div#detail-content .left-item-like:hover, div#detail-content .right-item-like:ho
     cursor: pointer;
 } 
 div#detail-content .detail-description img {
-    width: 820px;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -50,6 +54,9 @@ div#detail-content .description {
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: 100;
+    text-align: right;
+    margin-right: 20%;
+    margin-top: 100px;
 }
 div#detail-content .all-images {
     margin-bottom: 100px;

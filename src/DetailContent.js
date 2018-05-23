@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import posts from './posts';
 import './DetailContent.css';
 // кнопка чтобы поделиться в Twitter
-import { TwitterShareButton } from 'react-share';
+// import { TwitterShareButton } from 'react-share';
 import ViewPhotos from './ViewPhotos';
 import { Helmet } from "react-helmet";
 
@@ -113,12 +113,12 @@ class DetailContent extends Component {
     });
 
     // в зависимости от состояния выводим картинку лайка
-    let likeIcon;
-    if (this.state.like !== "true") {
-      likeIcon = '../assets/icons/like-false.png';
-    } else {
-      likeIcon = '../assets/icons/like-true.png';
-    }
+    // let likeIcon;
+    // if (this.state.like !== "true") {
+    //   likeIcon = '../assets/icons/like-false.png';
+    // } else {
+    //   likeIcon = '../assets/icons/like-true.png';
+    // }
 
     // в зависимости от состояния включаем и отключаем прокрутку
     if (this.state.viewPhotosDisplay === "none") {
@@ -129,20 +129,12 @@ class DetailContent extends Component {
       document.body.style.position = 'fixed';
     }
 
-    // присваиваем классы постам с четными и нечетными id
-    let className;
-    if (post.id % 2 === 0) {
-      className = 'left-item-like';
-    } else {
-      className = 'right-item-like';
-    }
-
     // стиль для иконки Twitter
-    var twitterButton = {
-      width: '30px',
-      outline: 'none',
-      cursor: 'pointer'
-    }
+    // var twitterButton = {
+    //   width: '30px',
+    //   outline: 'none',
+    //   cursor: 'pointer'
+    // }
     return (
       <div>
         {/* this code for document.head */}
@@ -154,7 +146,8 @@ class DetailContent extends Component {
 
 
         <div id='detail-content'>
-          <div className='social-media'>
+          {/* code for social-media */}
+          {/* <div className='social-media'>
             <p>
               <img onClick={this.like.bind(this)}
                 className={className}
@@ -171,10 +164,12 @@ class DetailContent extends Component {
             <a href='https://www.instagram.com/legendaryphotography.magazine/' target="_blank" rel="noopener noreferrer">
               <img src='../assets/icons/instagram.png' alt='instagram' />
             </a>
-          </div>
+          </div> */}
+          {/* code for social-media */}
           <div className='detail-description'>
             <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
             <p className='autor'>By <i>{post.autor}</i></p>
+            <p className='quote'>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!"</p>
             <p className='description'>{post.description}</p>
             <div className='all-images'>
               {images}
@@ -191,7 +186,7 @@ class DetailContent extends Component {
             numberOfPhoto={this.state.numberOfPhoto}
           />
         </div>
-      </div>
+      </div >
     );
   }
 }

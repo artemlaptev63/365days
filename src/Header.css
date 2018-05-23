@@ -2,16 +2,22 @@
     display: flex;
     background-color: #000000;
     color: #ffffff;
-    padding: 40px 100px 30px 100px;
+    padding: 60px 100px;
+    align-items: center;
 }
 #header img {
-    width: 400px;
+    width: 500px;
+    margin-top: 10px;
 }
 #header .form-for-email {
     text-align: right;
     width: 100%;
     font-size: 20px;
-    margin-top: -25px;
+    margin-top: -50px;
+}
+#header .form-for-email p {
+    margin-bottom: 0px;
+    letter-spacing: 2px;
 }
 #header input {
     font-family: 'Didot', 'Playfair Display', sans-serif;

@@ -3,22 +3,17 @@
     color: #ffffff;
     font-size: 17px;
     position: relative;
+    text-align: center;
 }
-#footer .flex {
-    display: flex;
-    padding-top: 90px;
-    padding-bottom: 50px;
+#footer  {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 #footer .logo {
-    flex: 1;
-    text-align: right;
-    margin-right: 150px;
+    text-align: center;
 }
 #footer .logo img {
-    width: 400px;
-}
-#footer .write-us {
-    flex: 1;
+    width: 500px;
 }
 #footer a {
     text-decoration: none;
@@ -28,8 +23,6 @@
     text-decoration: underline;
 }
 #footer div.write-us p {
-    margin-left: -100px;
-    margin-top: -15px;
     letter-spacing: 1.5px;
     line-height: 2.5;
 }

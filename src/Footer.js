@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div id='footer'>
-                <div className='flex'>
+                <div>
                     <div className='logo'>
                         <img src="../assets/logo@2x.png" alt='logo-365' />
                     </div>
