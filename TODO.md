@@ -16,8 +16,8 @@
 [-] problem with SEO (hashHistory #)
 [x] fix link to instagram
 [x] fix fonts
-[ ] fix logo
-[ ] add icon for title
-[ ] fix logo instagram
+[x] fix logo
+[x] add icon for title
+[x] fix logo instagram
 
 

@@ -33,7 +33,7 @@ class MainBanner extends Component {
                 featuring exceptional works of art.<br />
                 One talented artist a day.<br />
                 2018 is the year of <i>photography</i>.
-                            </p>
+              </p>
             </div>
           </div>
         </div>
