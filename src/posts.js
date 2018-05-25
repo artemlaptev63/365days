@@ -2,9 +2,14 @@ export default {
     data: [
         {
             id: 1,
+            country: 'France',
+            source: 'Wikipedia',
+            link: 'https://en.wikipedia.org/wiki/Henri_Cartier-Bresson',
+            years: '1897-1991',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere, minima! Aperiam, modi placeat hic soluta nesciunt similique, facere odio doloremque culpa, incidunt sed, quos rem veniam blanditiis quis ab.',
-            title: 'Girls',
-            autor: 'Evgeniya Lapteva',
+            autor: 'Henri Certier-Bresson',
+            quote: 'The photograph itself doesn’t interest me. I want only to capture a minute part of reality.',
+            mainBannerTitle: 'Girls', //перед названием нужна запятая
             mainImage: '../assets/post1/main-photo.png',
             image1: '../assets/post1/image1.jpg',
             image2: '../assets/post1/image2.jpg',
@@ -18,258 +23,37 @@ export default {
         },
         {
             id: 2,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis libero reprehenderit, eaque nisi esse iusto, delectus illo similique ex est doloremque ullam nam quas repudiandae exercitationem beatae sunt aliquam magnam!',
-            title: 'Purple',
-            autor: 'Irina Manning',
-            mainImage: '../assets/post2/main-photo.jpg',
-            image1: '../assets/post2/image1.jpg',
-            image2: '../assets/post2/image2.jpg',
-            image3: '../assets/post2/image3.jpg',
+            country: 'France',
+            source: 'Wikipedia',
+            link: 'https://en.wikipedia.org/wiki/Henri_Cartier-Bresson',
+            years: '1897-1991',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At facere, minima! Aperiam, modi placeat hic soluta nesciunt similique, facere odio doloremque culpa, incidunt sed, quos rem veniam blanditiis quis ab.',
+            autor: 'Henri Certier-Bresson',
+            quote: 'The photograph itself doesn’t interest me. I want only to capture a minute part of reality.',
+            mainBannerTitle: '', //перед названием нужна запятая
+            mainImage: '../assets/post1/albert-camus-paris-1944.jpg',
+            image1: 'post1/alicante-spain-1932.jpg',
+            image2: 'post1/auto-race-1966.jpg',
+            image3: 'post1/football-game-1960.jpg',
             images: [
-                '../assets/post2/main-photo.jpg',
-                '../assets/post2/image1.jpg',
-                '../assets/post2/image2.jpg',
-                '../assets/post2/image3.jpg'
-            ]
-        },
-        {
-            id: 3,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id placeat quas nostrum iure similique quasi sint, odio laudantium distinctio totam officia dicta praesentium soluta eaque neque, magni aspernatur! Nemo, enim.',
-            title: 'Abstraction',
-            autor: 'Artem Laptev',
-            mainImage: '../assets/post3/main-photo.jpeg',
-            image1: '../assets/post3/image1.jpg',
-            image2: '../assets/post3/image2.jpg',
-            image3: '../assets/post3/image3.jpeg',
-            images: [
-                '../assets/post3/main-photo.jpeg',
-                '../assets/post3/image1.jpg',
-                '../assets/post3/image2.jpg',
-                '../assets/post3/image3.jpeg'
-            ]
-        },
-        {
-            id: 4,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt dolorum fugiat, optio voluptatem consectetur architecto, doloribus porro repellendus. Commodi accusantium, facere ullam consectetur qui! Voluptatibus omnis eum, animi quis.',
-            title: 'Nature',
-            autor: 'Leonardo Di Caprio',
-            mainImage: '../assets/post4/main-photo.jpeg',
-            image1: '../assets/post4/image1.jpg',
-            image2: '../assets/post4/image2.jpg',
-            image3: '../assets/post4/image3.jpeg',
-            images: [
-                '../assets/post4/main-photo.jpeg',
-                '../assets/post4/image1.jpg',
-                '../assets/post4/image2.jpg',
-                '../assets/post4/image3.jpeg'
-            ]
-        },
-        {
-            id: 5,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor mollitia eveniet iste quis explicabo, libero dignissimos unde inventore quod esse possimus earum, laborum molestiae repellendus laboriosam delectus, commodi voluptate numquam!',
-            title: 'Girls',
-            autor: 'Evgeniya Lapteva',
-            mainImage: '../assets/post1/main-photo.png',
-            image1: '../assets/post1/image1.jpg',
-            image2: '../assets/post1/image2.jpg',
-            image3: '../assets/post1/image3.jpg',
-            images: [
-                '../assets/post1/main-photo.png',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image3.jpg'
-            ]
-        },
-        {
-            id: 6,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officia impedit dolorum eveniet ratione hic saepe nobis corporis nihil libero! Omnis, molestiae aut sed cumque sunt at fugit expedita dolore.',
-            title: 'Purple',
-            autor: 'Irina Manning',
-            mainImage: '../assets/post2/main-photo.jpg',
-            image1: '../assets/post2/image1.jpg',
-            image2: '../assets/post2/image2.jpg',
-            image3: '../assets/post2/image3.jpg',
-            images: [
-                '../assets/post2/main-photo.jpg',
-                '../assets/post2/image1.jpg',
-                '../assets/post2/image2.jpg',
-                '../assets/post2/image3.jpg'
-            ]
-        },
-        {
-            id: 7,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magni harum, reiciendis reprehenderit, laborum officia minima veritatis velit veniam aliquid dolore ea optio itaque necessitatibus, illum voluptatem iusto quas sed?',
-            title: 'Abstraction',
-            autor: 'Artem Laptev',
-            mainImage: '../assets/post3/main-photo.jpeg',
-            image1: '../assets/post3/image1.jpg',
-            image2: '../assets/post3/image2.jpg',
-            image3: '../assets/post3/image3.jpeg',
-            images: [
-                '../assets/post3/main-photo.jpeg',
-                '../assets/post3/image1.jpg',
-                '../assets/post3/image2.jpg',
-                '../assets/post3/image3.jpeg'
-            ]
-        },
-        {
-            id: 8,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi neque est mollitia ex laboriosam. Quod harum suscipit officia pariatur asperiores, aspernatur, aperiam voluptatem recusandae ipsa accusantium ipsum molestiae voluptatum temporibus.',
-            title: 'Nature',
-            autor: 'Leonardo Di Caprio',
-            mainImage: '../assets/post4/main-photo.jpeg',
-            image1: '../assets/post4/image1.jpg',
-            image2: '../assets/post4/image2.jpg',
-            image3: '../assets/post4/image3.jpeg',
-            images: [
-                '../assets/post4/main-photo.jpeg',
-                '../assets/post4/image1.jpg',
-                '../assets/post4/image2.jpg',
-                '../assets/post4/image3.jpeg'
-            ]
-        },
-        {
-            id: 9,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum cum beatae quis quae suscipit facilis fugiat, alias impedit. Aliquam doloribus deleniti quia in porro, distinctio non molestiae sint eaque a.',
-            title: 'Girls',
-            autor: 'Evgeniya Lapteva',
-            mainImage: '../assets/post1/main-photo.png',
-            image1: '../assets/post1/image1.jpg',
-            image2: '../assets/post1/image2.jpg',
-            image3: '../assets/post1/image3.jpg',
-            images: [
-                '../assets/post1/main-photo.png',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image3.jpg'
-            ]
-        },
-        {
-            id: 10,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto excepturi sint itaque, et rem dolor. Ex temporibus dolor, quasi dicta iste rerum nam quidem, sed sunt aliquid doloribus aut nihil.',
-            title: 'Purple',
-            autor: 'Irina Manning',
-            mainImage: '../assets/post2/main-photo.jpg',
-            image1: '../assets/post2/image1.jpg',
-            image2: '../assets/post2/image2.jpg',
-            image3: '../assets/post2/image3.jpg',
-            images: [
-                '../assets/post2/main-photo.jpg',
-                '../assets/post2/image1.jpg',
-                '../assets/post2/image2.jpg',
-                '../assets/post2/image3.jpg'
-            ]
-        },
-        {
-            id: 11,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia itaque iusto dolorem, natus atque consectetur molestiae, sequi eius quisquam adipisci magnam doloribus debitis, labore autem minima qui! Consequatur, tempore?',
-            title: 'Abstraction',
-            autor: 'Artem Laptev',
-            mainImage: '../assets/post3/main-photo.jpeg',
-            image1: '../assets/post3/image1.jpg',
-            image2: '../assets/post3/image2.jpg',
-            image3: '../assets/post3/image3.jpeg',
-            images: [
-                '../assets/post3/main-photo.jpeg',
-                '../assets/post3/image1.jpg',
-                '../assets/post3/image2.jpg',
-                '../assets/post3/image3.jpeg'
-            ]
-        },
-        {
-            id: 12,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aspernatur harum ea dicta soluta. Quae officia dolores aliquid repudiandae aspernatur assumenda et rerum, vero eum, tempora distinctio, perferendis itaque illo!',
-            title: 'Nature',
-            autor: 'Leonardo Di Caprio',
-            mainImage: '../assets/post4/main-photo.jpeg',
-            image1: '../assets/post4/image1.jpg',
-            image2: '../assets/post4/image2.jpg',
-            image3: '../assets/post4/image3.jpeg',
-            images: [
-                '../assets/post4/main-photo.jpeg',
-                '../assets/post4/image1.jpg',
-                '../assets/post4/image2.jpg',
-                '../assets/post4/image3.jpeg'
-            ]
-        },
-        {
-            id: 13,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, molestias, at! Eum, architecto nisi officia ipsam inventore eligendi quas error adipisci assumenda rem ea, cupiditate. Repellat ipsa hic, suscipit cumque!',
-            title: 'Girls',
-            autor: 'Evgeniya Lapteva',
-            mainImage: '../assets/post1/main-photo.png',
-            image1: '../assets/post1/image1.jpg',
-            image2: '../assets/post1/image2.jpg',
-            image3: '../assets/post1/image3.jpg',
-            images: [
-                '../assets/post1/main-photo.png',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image3.jpg'
-            ]
-        },
-        {
-            id: 14,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!',
-            title: 'Purple',
-            autor: 'Irina Manning',
-            mainImage: '../assets/post2/main-photo.jpg',
-            image1: '../assets/post2/image1.jpg',
-            image2: '../assets/post2/image2.jpg',
-            image3: '../assets/post2/image3.jpg',
-            images: [
-                '../assets/post2/main-photo.jpg',
-                '../assets/post2/image1.jpg',
-                '../assets/post2/image2.jpg',
-                '../assets/post2/image3.jpg'
-            ]
-        },
-        {
-            id: 15,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus qui blanditiis nisi, dignissimos porro, veniam quaerat quasi natus temporibus nihil. Quas sunt numquam, ipsa explicabo modi quam quidem facilis consectetur.',
-            title: 'Abstraction',
-            autor: 'Artem Laptev',
-            mainImage: '../assets/post3/main-photo.jpeg',
-            image1: '../assets/post3/image1.jpg',
-            image2: '../assets/post3/image2.jpg',
-            image3: '../assets/post3/image3.jpeg',
-            images: [
-                '../assets/post3/main-photo.jpeg',
-                '../assets/post3/image1.jpg',
-                '../assets/post3/image2.jpg',
-                '../assets/post3/image3.jpeg'
-            ]
-        },
-        {
-            id: 16,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, molestias, at! Eum, architecto nisi officia ipsam inventore eligendi quas error adipisci assumenda rem ea, cupiditate. Repellat ipsa hic, suscipit cumque!',
-            title: 'Girls',
-            autor: 'Evgeniya Lapteva',
-            mainImage: '../assets/post1/main-photo.png',
-            image1: '../assets/post1/image1.jpg',
-            image2: '../assets/post1/image2.jpg',
-            image3: '../assets/post1/image3.jpg',
-            images: [
-                '../assets/post1/main-photo.png',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image2.jpg',
-                '../assets/post1/image3.jpg'
-            ]
-        },
-        {
-            id: 17,
-            description: 'lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi м  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi',
-            title: 'Purple',
-            autor: 'Irina Manning',
-            mainImage: '../assets/post2/main-photo.jpg',
-            image1: '../assets/post2/image1.jpg',
-            image2: '../assets/post2/image2.jpg',
-            image3: '../assets/post2/image3.jpg',
-            images: [
-                '../assets/post2/main-photo.jpg',
-                '../assets/post2/image1.jpg',
-                '../assets/post2/image2.jpg',
-                '../assets/post2/image3.jpg'
+                'post1/albert-camus-paris-1944.jpg',
+                'post1/alicante-spain-1932.jpg',
+                'post1/auto-race-1966.jpg',
+                'post1/football-game-1960.jpg',
+                'post1/gahndi-1948.jpg',
+                'post1/gare-saint-lazare-1932.jpg',
+                'post1/hamburg-1952-1953. .jpg',
+                'post1/hyères-1932.jpg',
+                'post1/jean-paul-sartre-1946..jpg',
+                'post1/lenin-tomb-1954.jpg',
+                'post1/model-prison-1975.jpg',
+                'post1/naples-1960.jpg',
+                'post1/near-strasbourg-1944.jpg',
+                'post1/new-york-1960.jpg',
+                'post1/roman-amphitheatre-valencia-1933.jpg',
+                'post1/romania-1975.jpg',
+                'post1/simone-de-beauvoir-1946.jpg',
+                'post1/truman-capote-new-orleans-1947.jpg'
             ]
         }
     ],
@@ -325,6 +109,9 @@ export default {
 
     // получаем элементы пагинации от min до max
     getPagination: function (min, max) {
+        if (max < 5) {
+            min = 0
+        }
         var paginationArray = [];
         for (var i = min; i <= max; i++) {
             paginationArray.push(this.data[i]);

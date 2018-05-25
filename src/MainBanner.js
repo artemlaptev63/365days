@@ -17,10 +17,11 @@ class MainBanner extends Component {
     return (
       <div>
         <div style={mainBanner} id='main-banner'>
-          <div className='grid-row-1'>
+          <div className='container'>
             <div className='grid-item about-image'>
-              <p className='autor'>By <i>{lastItem.autor}</i></p>
-              <p className='title'>{lastItem.title}</p>
+              <span className='title'>
+                {lastItem.autor}<i>{lastItem.mainBannerTitle}</i>
+              </span>
             </div>
           </div>
           <div className='grid-row-2'>
@@ -29,19 +30,18 @@ class MainBanner extends Component {
             </div>
             <div className='grid-item desc'>
               <p className='description'>
-                <i>365 Days</i> is a blog<br />
-                featuring exceptional works of art.<br />
-                One talented artist a day.<br />
-                2018 is the year of <i>photography</i>.
+                <i>Legendary Fotographers</i> is an online magazine<br /> featuring the work of
+                   the most influental<br /> photographers of all time.
               </p>
             </div>
           </div>
         </div>
         <div id='welcome'>
-          <h1>Want to be a <i>featured</i> artist?</h1>
+          <h1>Want to suggest a <i>photographer</i>?</h1>
           <p>Send an email to <a href='mailto:hello.legendaryphotographers@gmail.com'><i>hello.legendaryphotographers@gmail.com</i></a></p>
-          <p>with your story and porfolio link.</p>
-          <p>If your work is selected, our curators will be in touch.</p>
+          <p>with the photographer’s bio and porfolio link.</p>
+          <p>Our curators will notify you if your suggestion</p>
+          <p>has been included into our list.</p>
         </div>
       </div>
     );

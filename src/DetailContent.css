@@ -33,10 +33,6 @@ div#detail-content .detail-description img {
     height: auto;
     margin-bottom: 20px;
 }
-div#detail-content .autor {
-    margin-top: 0px;
-    font-size: 20px;
-}
 div#detail-content .number-of-item {
     font-size: 150px;
     margin-bottom: 0px;
@@ -46,18 +42,24 @@ div#detail-content .number-of-item i {
     margin-right: 20px;
 }
 div#detail-content .number-of-item span {
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+div#detail-content .country-years {
+    margin-top: -30px;
+    font-size: 20px;
+    margin-bottom: 70px;
 }
 div#detail-content .description {
     margin-bottom: 70px;
     line-height: 1.5;
-    letter-spacing: 2px;
     font-size: 20px;
     font-weight: 100;
-    text-align: right;
+    text-align: justify;
     margin-right: 20%;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 div#detail-content .all-images {
     margin-bottom: 100px;
+    margin-right: 20%;
 }

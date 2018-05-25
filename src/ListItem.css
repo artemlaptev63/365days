@@ -19,7 +19,6 @@
   position: relative;
   background-size: cover !important;
   background-position: center center !important;
-  /* height: 360px; */
   height: 450px;
   flex: 2;
   margin-top: 0px;
@@ -35,8 +34,6 @@
   margin-bottom: 15px;
   margin-top: 0px;
   margin-left: 15px;
-  /* width: 155px; */
-  /* height: 110px; */
   width: 185px;
   height: 140px;
   background-size: cover !important;
@@ -46,8 +43,6 @@
   margin-bottom: 15px;
   margin-top: 0px;
   margin-right: 15px;
-  /* width: 155px;
-  height: 110px; */
   width: 185px;
   height: 140px;
   background-size: cover !important;
@@ -119,7 +114,7 @@
   font-weight: normal;
   font-stretch: normal;
   line-height: 1.94;
-  letter-spacing: 0.3px;
+  letter-spacing: 2px;
   white-space: nowrap;
   width: 250px;
   margin-left: 0px;
@@ -136,7 +131,7 @@
   font-weight: normal;
   font-stretch: normal;
   line-height: 1.94;
-  letter-spacing: 0.3px;
+  letter-spacing: 2px;
   white-space: nowrap;
   width: 250px;
   margin-right: 0px;

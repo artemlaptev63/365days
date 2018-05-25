@@ -106,7 +106,7 @@ class DetailContent extends Component {
 
     // выводим все фото текущего поста
     var images = post.images.map((item, index) => {
-      return <img src={item}
+      return <img src={'../assets/' + item}
         key={index}
         alt={post.title}
         onClick={this.viewPhotos.bind(this, index)} />
@@ -139,7 +139,7 @@ class DetailContent extends Component {
       <div>
         {/* this code for document.head */}
         <Helmet>
-          <title>{post.title}&nbsp;{post.autor}</title>
+          <title>{post.autor}</title>
           <meta name='description' content={post.description} />
         </Helmet>
         {/* this code for document.head */}
@@ -167,8 +167,8 @@ class DetailContent extends Component {
           </div> */}
           {/* code for social-media */}
           <div className='detail-description'>
-            <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span></p>
-            <p className='autor'>By <i>{post.autor}</i></p>
+            <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span><span className='autor'>{post.autor}</span></p>
+            <p className='country-years'><i>{post.country}, {post.years}</i></p>
             <p className='quote'>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!"</p>
             <p className='description'>{post.description}</p>
             <div className='all-images'>

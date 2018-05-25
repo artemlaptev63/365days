@@ -108,6 +108,8 @@ class DetailPagination extends Component {
     var fiveItems = posts.getPagination(this.state.paginationCountmin, this.state.paginationCountmax);
 
 
+
+
     var pagination = fiveItems.map((item, index) => {
       // если элемент пагинации текущий, делаем его неактивным
       if (String(this.props.match.params.id) === String(item.id)) {
@@ -191,7 +193,7 @@ class DetailPagination extends Component {
       <div>
         {/* this code for document.head */}
         <Helmet>
-          <title>{post.title}&nbsp;{post.autor}</title>
+          <title>{post.autor}</title>
           <meta name='description' content={post.description} />
         </Helmet>
         {/* this code for document.head */}
