@@ -17,7 +17,7 @@ div#detail-content .detail-description {
 div#detail-content .quote {
     margin-left: 30%;
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 0.3px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -32,6 +32,10 @@ div#detail-content .detail-description img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+div#detail-content .detail-description img:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 div#detail-content .number-of-item {
     font-size: 150px;
@@ -52,12 +56,25 @@ div#detail-content .country-years {
 }
 div#detail-content .description {
     margin-bottom: 70px;
-    line-height: 1.5;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
     font-size: 20px;
     font-weight: 100;
     text-align: justify;
     margin-right: 20%;
     margin-top: 150px;
+}
+div#detail-content .description .source {
+    color: #c2bfc3;
+    display: inline-block;
+    margin-top: 30px;
+}
+div#detail-content .description .source a {
+    text-decoration: none;
+    color: #c2bfc3;
+}
+div#detail-content .description .source a:hover {
+    color: grey;
 }
 div#detail-content .all-images {
     margin-bottom: 100px;

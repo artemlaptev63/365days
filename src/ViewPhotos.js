@@ -68,7 +68,7 @@ class ViewPhotos extends Component {
     return (
       <div id='showAllPhotos' style={show}>
         <div className='container'>
-          <img onClick={this.props.nextPhoto} onTouchStart={this.handleTouchStart.bind(this)} onTouchMove={this.handleTouchMove.bind(this)} src={image} alt="" />
+          <img onClick={this.props.nextPhoto} onTouchStart={this.handleTouchStart.bind(this)} onTouchMove={this.handleTouchMove.bind(this)} src={'../assets/' + image} alt="" />
         </div>
         <div className="closeGallery" onClick={this.props.closeGallery}>&#215;</div>
         <p onClick={this.props.prevPhoto} className='photoNavigationPrev'>&#60;</p>

@@ -12,8 +12,6 @@ class PhotographerList extends Component {
     super(props);
     // показываем 10 постов
     this.state = { numItems: 10 };
-    // после обновления страница отображается сверху
-    window.scrollTo(0, 0);
   }
 
   // показываем еще 10 постов

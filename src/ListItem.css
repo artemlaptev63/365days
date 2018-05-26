@@ -12,7 +12,7 @@
 .delimiter {
   margin-top: 60px;
   margin-bottom: 70px;
-  height: 10px;
+  height: 7px;
   background-color: #000000; 
 }
 .main-photo {
@@ -67,7 +67,7 @@
   right: 0;
   bottom: 0;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -87,15 +87,15 @@
   left: 0;
   bottom: 0;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px;
   margin-left: 30px;
   margin-bottom: 20px;
 }
 
-.photos-number-left:hover, .photos-number-right:hover {
+/* .photos-number-left:hover, .photos-number-right:hover {
   text-decoration: underline;
-}
+} */
 .link-to-detail-left:hover, .link-to-detail-right:hover {
   text-decoration: underline;
 }
@@ -110,11 +110,11 @@
   transform: rotate(-90deg);
   text-align: right;
   margin-top: 90px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 1.94;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   white-space: nowrap;
   width: 250px;
   margin-left: 0px;
@@ -127,11 +127,11 @@
   transform: rotate(-90deg);
   text-align: right;
   margin-top: 90px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 1.94;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   white-space: nowrap;
   width: 250px;
   margin-right: 0px;

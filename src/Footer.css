@@ -1,19 +1,20 @@
 #footer {
     background-color: black;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 18px;
     position: relative;
     text-align: center;
 }
 #footer  {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 #footer .logo {
     text-align: center;
+    margin-bottom: 30px;
 }
 #footer .logo img {
-    width: 500px;
+    width: 400px;
 }
 #footer a {
     text-decoration: none;
@@ -25,12 +26,12 @@
 #footer div.write-us p {
     letter-spacing: 1.5px;
     line-height: 2.5;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #footer p.to-instagram {
     text-align: center;
     margin-bottom: 0px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     letter-spacing: 1.5px;
     line-height: 40px;
 }

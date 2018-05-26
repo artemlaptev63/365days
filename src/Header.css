@@ -6,13 +6,13 @@
     align-items: center;
 }
 #header img {
-    width: 500px;
+    width: 400px;
     margin-top: 10px;
 }
 #header .form-for-email {
     text-align: right;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: -50px;
 }
 #header .form-for-email p {
@@ -22,7 +22,7 @@
 #header input {
     font-family: 'Didot', 'Playfair Display', sans-serif;
     padding: 15px 58px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     outline: none;
     margin-top: 10px;
@@ -34,7 +34,7 @@
     background-color: #ffffff !important;
     font-family: 'Didot', 'Playfair Display', sans-serif;
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     outline: none;
     margin-top: 10px;
@@ -44,3 +44,7 @@
 #header .form-for-email button:hover {
     cursor: pointer;
 }
+#header ::-webkit-input-placeholder { color: #c1c1c1; }
+#header ::-moz-placeholder          { color: #c1c1c1; } /* Firefox 19+ */
+#header :-moz-placeholder           { color: #c1c1c1; } /* Firefox 18- */
+#header :-ms-input-placeholder      { color: #c1c1c1; }

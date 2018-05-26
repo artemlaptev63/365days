@@ -19,7 +19,7 @@ class MainBanner extends Component {
         <div style={mainBanner} id='main-banner'>
           <div className='container'>
             <div className='grid-item about-image'>
-              <span className='title'>
+              <span className='title'>Photo by&nbsp;
                 {lastItem.autor}<i>{lastItem.mainBannerTitle}</i>
               </span>
             </div>

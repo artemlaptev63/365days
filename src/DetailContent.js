@@ -169,8 +169,10 @@ class DetailContent extends Component {
           <div className='detail-description'>
             <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span><span className='autor'>{post.autor}</span></p>
             <p className='country-years'><i>{post.country}, {post.years}</i></p>
-            <p className='quote'>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi suscipit qui aperiam saepe nemo excepturi voluptatem repudiandae omnis molestiae quos fugit iste aliquam, veritatis sit facere provident, distinctio consequuntur eligendi!"</p>
-            <p className='description'>{post.description}</p>
+            <p className='quote'>"{post.quote}"</p>
+            <p className='description'>{post.description}<br />
+              <span className='source'>Source: <a href={post.link} target='_blank' rel="noopener noreferrer">{post.source}</a></span>
+            </p>
             <div className='all-images'>
               {images}
             </div>
