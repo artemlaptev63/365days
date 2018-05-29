@@ -103,12 +103,11 @@ export default {
             autor: 'Ansel Adams',
             quote: 'You don’t take a photograph, you make it.',
             mainBannerTitle: '', //перед названием нужна запятая
-            mainImage: '../assets/post4/1-tree.jpg',
-            image1: 'post4/2-church.jpg',
-            image2: 'post4/3-TheTetonsandtheSnakeRiver.jpg',
-            image3: 'post4/4-bare-trees.jpg',
+            mainImage: '../assets/post4/McDonaldLakeGlacierNationalPark.jpg',
+            image1: 'post4/3-TheTetonsandtheSnakeRiver.jpg',
+            image2: 'post4/4-bare-trees.jpg',
+            image3: 'post4/alley.jpg',
             images: [
-                'post4/1-tree.jpg',
                 'post4/2-church.jpg',
                 'post4/3-TheTetonsandtheSnakeRiver.jpg',
                 'post4/4-bare-trees.jpg',
@@ -117,7 +116,7 @@ export default {
                 'post4/Church, Taos Pueblo (1942).jpg',
                 'post4/garnet-lake-thunderclouds.jpg',
                 'post4/lake.jpeg',
-                'post4/McDonald Lake, Glacier National Park (1942).jpg',
+                'post4/McDonaldLake,GlacierNationalPark(1942).jpg',
                 'post4/Mt. Moran, Teton National Park.jpg',
                 'post4/Navajo Woman and Infant.jpg',
                 'post4/Portrait of Tom Kobayashi at Manzanar, 1943.jpg'
