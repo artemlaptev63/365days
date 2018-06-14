@@ -17,7 +17,7 @@ div#main-banner .about-image span.title {
     white-space: nowrap;
     transform: translate(0,100%) rotate(-90deg);
     transform-origin: 0 0;
-    font-size: 12px;
+    font-size: 15px;
 }
 div#main-banner .about-image span.title:after {
     content: "";
@@ -37,7 +37,7 @@ div#main-banner .about-image span.title:after {
     width: 100px;
 }
 #main-banner img {
-    width: 400px;
+    width: 150px;
 }
 #main-banner .title {
     letter-spacing: 1px;
@@ -89,4 +89,27 @@ div#welcome p:nth-child(3) {
 }
 div#welcome p:nth-child(5) {
     margin-bottom: 90px;
+}
+.submit-photographer {
+    text-align: center;
+}
+.submit-photographer a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Didot', 'Playfair Display',  sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    border: 1px solid black;
+    padding: 15px 40px;
+    letter-spacing: 0.8px;
+    font-stretch: ultra-condensed;
+    margin-bottom: 50px;
+    outline: none;
+    background-color: #ffffff;
+}
+.submit-photographer a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
 }

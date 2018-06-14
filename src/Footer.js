@@ -5,19 +5,21 @@ class Footer extends Component {
     render() {
         return (
             <div id='footer'>
-                <div>
-                    <p className='logo'>
+                <div className='logo'>
+                    <p>
                         <img src='../assets/logo@2x.png' alt='logo-365' />
                     </p>
-                    <div className='write-us'>
-                        <p>
-                            Suggest a photographer or send comments to <br />
-                            <a href='mailto:hello.legendaryphotographers@gmail.com'><i>hello.legendaryphotographers@gmail.com</i></a> <br />
-                        </p>
-                    </div>
+                    <p className='right'>All rights reserved</p>
                 </div>
-                <p className='to-instagram'>Follow us on Instagram: <br /><a href='https://www.instagram.com/legendaryphotography.magazine/' target="_blank" rel="noopener noreferrer"><i>@legendaryphotography.magazine</i></a></p>
-                <p className='version'>v1.0.9</p>
+                <div className='write-us'>
+                    <p className='overline'>
+                        Send your submissions to<br />
+                        <a href='mailto:hello.legendaryphotographers@gmail.com'><i>365creativephotography@gmail.com</i></a> <br />
+                        for a chance to be featured.
+                    </p>
+                    <p className='to-instagram overline'>Follow us on Instagram:<br /><a href='https://www.instagram.com/legendaryphotography.magazine/' target="_blank" rel="noopener noreferrer"><i>@365creative.photography</i></a></p>
+                    <p className='version'>v1.0.10</p>
+                </div>
             </div>
         );
     }

@@ -6,7 +6,7 @@
     align-items: center;
 }
 #header img {
-    width: 400px;
+    width: 150px;
     margin-top: 10px;
 }
 #header .form-for-email {
@@ -16,7 +16,7 @@
     margin-top: -50px;
 }
 #header .form-for-email p {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     letter-spacing: 2px;
 }
 #header input {

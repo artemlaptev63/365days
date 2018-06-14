@@ -168,14 +168,14 @@ class DetailContent extends Component {
           {/* code for social-media */}
           <div className='detail-description'>
             <p className='number-of-item'><i>#{post.id}</i><span>{post.title}</span><span className='autor'>{post.autor}</span></p>
-            <p className='country-years'><i>{post.country}, {post.years}</i></p>
+            <p className='country-years'><i>{post.country}</i></p>
             <p className='quote'>"{post.quote}"</p>
-            <p className='description'>{post.description}<br />
-              <span className='source'>Source: <a href={post.link} target='_blank' rel="noopener noreferrer">{post.source}</a></span>
-            </p>
             <div className='all-images'>
               {images}
             </div>
+            <p className='description'>{post.description}<br />
+              <span className='source'><a href={post.link} target='_blank' rel="noopener noreferrer">{post.source}</a></span>
+            </p>
           </div>
         </div>
         <div>

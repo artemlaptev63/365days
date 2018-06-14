@@ -1,20 +1,26 @@
 #footer {
+    display: flex;
     background-color: black;
     color: #ffffff;
     font-size: 18px;
     position: relative;
-    text-align: center;
 }
 #footer  {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 100px;
 }
 #footer .logo {
-    text-align: center;
     margin-bottom: 30px;
+    flex: 1;
+}
+#footer .write-us {
+    flex: 1;
+    padding-left: 400px;
+}
+#footer .overline {
+    border-top: 2px solid white;
 }
 #footer .logo img {
-    width: 400px;
+    width: 100px;
 }
 #footer a {
     text-decoration: none;
@@ -23,22 +29,25 @@
 #footer a:hover {
     text-decoration: underline;
 }
+#footer .right {
+    margin-top: 100px;
+}
 #footer div.write-us p {
     letter-spacing: 1.5px;
     line-height: 2.5;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    text-align: right;
 }
 #footer p.to-instagram {
-    text-align: center;
     margin-bottom: 0px;
-    /* padding-bottom: 50px; */
     letter-spacing: 1.5px;
     line-height: 40px;
+    margin-top: 50px;
 }
 #footer .version {
-    font-size: 10px;
+    font-size: 9px;
     position: absolute;
-    right: 5px;
+    right: 50%;
     bottom: 0;
     margin-bottom: 0px;
 }

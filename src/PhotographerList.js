@@ -38,7 +38,7 @@ class PhotographerList extends Component {
     let buttonShowMore;
     if (this.state.numItems < posts.data.length) {
       buttonShowMore = <div className='show-more'>
-        <button onClick={this.showMore.bind(this)}>SHOW 10 PREVIOUS POSTS</button>
+        <button onClick={this.showMore.bind(this)}>SHOW 10 PREVIOUS GALLERIES</button>
       </div>;
     }
 
