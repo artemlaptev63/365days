@@ -18,7 +18,7 @@ class Footer extends Component {
                         for a chance to be featured.
                     </p>
                     <p className='to-instagram overline'>Follow us on Instagram:<br /><a href='https://www.instagram.com/legendaryphotography.magazine/' target="_blank" rel="noopener noreferrer"><i>@365creative.photography</i></a></p>
-                    <p className='version'>v1.0.11</p>
+                    <p className='version'>v1.0.12</p>
                 </div>
             </div>
         );
