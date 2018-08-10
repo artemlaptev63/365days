@@ -100,7 +100,7 @@ class ListItem extends Component {
             </div>
             <div className="about-image-left-item">
               <p>
-                <b>{this.props.item.autor}</b>
+                <b>By {this.props.item.autor}</b>
                 <br />
                 <i>{this.props.item.country}</i>
               </p>
@@ -121,11 +121,9 @@ class ListItem extends Component {
           <div className="flex">
             <div className="about-image-right-item">
               <p>
-                <b>{this.props.item.autor}</b>
+                <b>By {this.props.item.autor}</b>
                 <br />
-                <i>
-                  {this.props.item.country}, {this.props.item.years}
-                </i>
+                <i>{this.props.item.country}</i>
               </p>
               <img
                 onClick={this.like.bind(this)}
