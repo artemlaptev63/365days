@@ -1,115 +1,123 @@
 div#main-banner {
-    position: relative; 
-    color: #ffffff;
-    background-size: cover !important;
-    min-height: 600px;
-    padding-bottom: 50px;
+  position: relative;
+  color: #ffffff;
+  background-size: cover !important;
+  min-height: 600px;
+  padding-bottom: 50px;
 }
 div#main-banner .about-image {
-    font-size: 25px;
-    display: inline-block;
-    overflow: hidden;
-    width: 1.5em;
-    line-height: 1.5;
+  font-size: 25px;
+  display: inline-block;
+  overflow: hidden;
+  width: 1.5em;
+  line-height: 1.5;
 }
 div#main-banner .about-image span.title {
-    display: inline-block;
-    white-space: nowrap;
-    transform: translate(0,100%) rotate(-90deg);
-    transform-origin: 0 0;
-    font-size: 15px;
+  display: inline-block;
+  white-space: nowrap;
+  transform: translate(0, 100%) rotate(-90deg);
+  transform-origin: 0 0;
+  font-size: 13px;
+}
+div#main-banner .about-image span.title a {
+  color: white;
+  text-decoration: none;
+}
+div#main-banner .about-image span.title a:hover {
+  text-decoration: underline;
 }
 div#main-banner .about-image span.title:after {
-    content: "";
-    float: left;
-    margin-top: 100%;
+  content: "";
+  float: left;
+  margin-top: 100%;
 }
 #main-banner .container {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 80px;
-    padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  padding-top: 40px;
 }
 #main-banner .logo {
-    position: absolute;
-    bottom: 30px;
-    left: 100px;
-    width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  width: 100px;
 }
 #main-banner img {
-    width: 150px;
+  width: 150px;
 }
 #main-banner .title {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 #main-banner p.description {
-    text-align: right;
-    line-height: 1.7;
-    font-size: 20px;
-    font-weight: 100;
-    margin-top: 50px;
-    position: absolute;
-    bottom: 30px;
-    right: 100px;
-    border-top: 5px solid white;
-    padding-top: 10px;
+  text-align: right;
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  border-top: 5px solid white;
+  padding-top: 10px;
 }
 #main-banner .description i {
-    font-size: 20px;
-    opacity: 0.8;
-    font-weight: 100;
+  font-size: 20px;
+  opacity: 0.8;
+  font-weight: 100;
 }
-#welcome h1, #welcome p {
-    text-align: center;
+#welcome h1,
+#welcome p {
+  text-align: center;
 }
 #welcome h1 {
-    font-weight: 900;
-    font-size: 35px;
-    margin-top: 75px;
-    margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 35px;
+  margin-top: 75px;
+  margin-bottom: 50px;
 }
 #welcome p {
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    opacity: 0.7;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  opacity: 0.7;
 }
 #welcome a {
-    text-decoration: none;
-    color: #000000;
-    opacity: 1;
+  text-decoration: none;
+  color: #000000;
+  opacity: 1;
 }
 #welcome a:hover {
-    cursor: pointer;
-    opacity: 0.7;
+  cursor: pointer;
+  opacity: 0.7;
 }
 div#welcome p:nth-child(3) {
-    margin-top: 0px;
-    margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 div#welcome p:nth-child(5) {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 .submit-photographer {
-    text-align: center;
+  text-align: center;
 }
 .submit-photographer a {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-family: 'Didot', 'Playfair Display',  sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    border: 1px solid black;
-    padding: 15px 40px;
-    letter-spacing: 0.8px;
-    font-stretch: ultra-condensed;
-    margin-bottom: 50px;
-    outline: none;
-    background-color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: "Didot", "Playfair Display", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  border: 1px solid black;
+  padding: 15px 40px;
+  letter-spacing: 0.8px;
+  font-stretch: ultra-condensed;
+  margin-bottom: 50px;
+  outline: none;
+  background-color: #ffffff;
 }
 .submit-photographer a:hover {
-    background-color: #000000;
-    color: #ffffff;
-    cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
 }

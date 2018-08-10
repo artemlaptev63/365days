@@ -1,84 +1,97 @@
 div#detail-content {
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 div#detail-content .social-media {
-    margin-top: 160px;
+  margin-top: 160px;
 }
 div#detail-content .social-media img {
-    width: 30px;
+  width: 30px;
 }
 div#detail-content .social-media p {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 div#detail-content .detail-description {
-    text-align: right;
+  text-align: right;
+}
+div#detail-content .autor-copyright a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: grey;
+}
+div#detail-content .autor-copyright {
+  text-align: left;
+  font-size: 18px;
 }
 div#detail-content .quote {
-    margin-left: 30%;
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 100px;
+  margin-left: 30%;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 100px;
 }
 div#detail-content .left-item-like,
 div#detail-content .right-item-like {
-    width: 30px;
+  width: 30px;
 }
-div#detail-content .left-item-like:hover, div#detail-content .right-item-like:hover {
-    cursor: pointer;
-} 
+div#detail-content .left-item-like:hover,
+div#detail-content .right-item-like:hover {
+  cursor: pointer;
+}
 div#detail-content .detail-description img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 div#detail-content .detail-description img:hover {
-    cursor: pointer;
-    opacity: 0.9;
+  cursor: pointer;
+  opacity: 0.9;
 }
 div#detail-content .number-of-item {
-    font-size: 150px;
-    margin-bottom: 0px;
-    margin-top: 100px;
+  font-size: 150px;
+  margin-bottom: 0px;
+  margin-top: 100px;
 }
 div#detail-content .number-of-item i {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 div#detail-content .number-of-item span {
-    font-size: 40px;
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 div#detail-content .country-years {
-    margin-top: -30px;
-    font-size: 20px;
-    margin-bottom: 70px;
+  margin-top: -30px;
+  font-size: 20px;
+  margin-bottom: 70px;
 }
 div#detail-content .description {
-    margin-bottom: 70px;
-    line-height: 1.7;
-    letter-spacing: 0.3px;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: justify;
-    margin-right: 20%;
-    margin-top: 100px;
+  margin-bottom: 70px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: justify;
+  margin-right: 20%;
+  margin-top: 100px;
 }
 div#detail-content .description .source {
-    color: #c2bfc3;
-    display: inline-block;
-    text-decoration: underline;
-    margin-top: 30px;
+  color: #c2bfc3;
+  display: inline-block;
+  text-decoration: underline;
+  margin-top: 30px;
 }
 div#detail-content .description .source a {
-    text-decoration: none;
-    color: #c2bfc3;
+  text-decoration: none;
+  color: #c2bfc3;
 }
 div#detail-content .description .source a:hover {
-    color: grey;
+  color: grey;
 }
 div#detail-content .all-images {
-    margin-bottom: 100px;
-    margin-right: 20%;
+  margin-bottom: 100px;
+  margin-right: 20%;
+}
+div#detail-content .autor-copyright {
+  margin-left: ;
 }

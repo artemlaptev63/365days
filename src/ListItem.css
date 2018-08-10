@@ -1,11 +1,13 @@
 .flex {
-    display: flex;
+  display: flex;
 }
-.left-item, .right-item {
+.left-item,
+.right-item {
   margin-left: 100px;
   margin-right: 100px;
 }
-.left-item, .right-item {
+.left-item,
+.right-item {
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -13,7 +15,7 @@
   margin-top: 60px;
   margin-bottom: 70px;
   height: 7px;
-  background-color: #000000; 
+  background-color: #000000;
 }
 .main-photo {
   position: relative;
@@ -27,7 +29,8 @@
   height: 360px;
   width: 60%;
 }
-.secondary-photo-left, .secondary-photo-right {
+.secondary-photo-left,
+.secondary-photo-right {
   flex: 1;
 }
 .secondary-photo-left p {
@@ -96,12 +99,23 @@
 /* .photos-number-left:hover, .photos-number-right:hover {
   text-decoration: underline;
 } */
-.link-to-detail-left:hover, .link-to-detail-right:hover {
+.link-to-detail-left:hover,
+.link-to-detail-right:hover {
   text-decoration: underline;
 }
-.about-image-left-item, .about-image-right-item {
+.about-image-left-item,
+.about-image-right-item {
   flex: 1;
   position: relative;
+}
+.about-image-left-item a,
+.about-image-right-item a {
+  text-decoration: none;
+  color: black;
+}
+.about-image-left-item a:hover,
+.about-image-right-item a:hover {
+  text-decoration: underline;
 }
 .about-image-left-item p {
   position: absolute;
@@ -152,7 +166,8 @@ div.right-item .right-item-like {
   width: 30px;
   margin-bottom: 20px;
 }
-div.left-item .left-item-like:hover, div.right-item .right-item-like:hover {
+div.left-item .left-item-like:hover,
+div.right-item .right-item-like:hover {
   cursor: pointer;
-} 
+}
 /*end style for likes*/

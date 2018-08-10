@@ -100,7 +100,8 @@ class ListItem extends Component {
             </div>
             <div className="about-image-left-item">
               <p>
-                <b>By {this.props.item.autor}</b>
+                Photos by{" "}
+                <Link to={this.props.path}>{this.props.item.autor}</Link>
                 <br />
                 <i>{this.props.item.country}</i>
               </p>
@@ -121,7 +122,8 @@ class ListItem extends Component {
           <div className="flex">
             <div className="about-image-right-item">
               <p>
-                <b>By {this.props.item.autor}</b>
+                Photos by{" "}
+                <Link to={this.props.path}>{this.props.item.autor}</Link>
                 <br />
                 <i>{this.props.item.country}</i>
               </p>
