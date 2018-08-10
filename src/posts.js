@@ -41,7 +41,7 @@ export default {
       autor: "Matthew Chimera",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
-      mainImage: "..assets/post2/sunset.jpg",
+      mainImage: "../assets/post2/sunset.jpg",
       image1: "post2/bow-bridge-snow.jpg",
       image2: "post2/briant-park-rain.jpg",
       image3: "post2/east-42-rain.jpg",
@@ -66,7 +66,7 @@ export default {
       autor: "Elizabeth Gadd",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
-      mainImage: "..assets/post3/girl-on-bed.jpg",
+      mainImage: "../assets/post3/girl-on-bed.jpg",
       image1: "post3/black-boys.jpg",
       image2: "post3/cabecera-papua-fin.jpg",
       image3: "post3/three-in-black.jpg",
@@ -91,7 +91,7 @@ export default {
       autor: "Matilde Gattoni",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
-      mainImage: "..assets/post4/woman-and-ducks.jpg",
+      mainImage: "../assets/post4/woman-and-ducks.jpg",
       image1: "post4/woman-waterfall.jpg",
       image2: "post4/woman-on-rocks.jpg",
       image3: "post4/woman-closed-eyes.jpg",
