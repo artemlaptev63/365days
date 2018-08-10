@@ -102,9 +102,7 @@ class ListItem extends Component {
               <p>
                 <b>{this.props.item.autor}</b>
                 <br />
-                <i>
-                  {this.props.item.country}, {this.props.item.years}
-                </i>
+                <i>{this.props.item.country}</i>
               </p>
               <img
                 onClick={this.like.bind(this)}

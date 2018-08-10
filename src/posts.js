@@ -2,7 +2,7 @@ export default {
   data: [
     {
       id: 1,
-      country: "",
+      country: "USA",
       source: "",
       link: "",
       years: "",
@@ -10,7 +10,7 @@ export default {
       autor: "Chris Orwig",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
-      mainImage: "../assets/post1/girl-swimming.jpg",
+      mainImage: "../assets/post1/blond-girl.jpg",
       image1: "post1/blond-girl.jpg",
       image2: "post1/blue-eyed-man.jpg",
       image3: "post1/brutal-man.jpg",
@@ -33,7 +33,7 @@ export default {
     },
     {
       id: 2,
-      country: "",
+      country: "USA",
       source: "",
       link: "",
       years: "",
@@ -61,9 +61,9 @@ export default {
       country: "",
       source: "",
       link: "",
-      years: "",
+      years: "France/Italy",
       description: "",
-      autor: "Elizabeth Gadd",
+      autor: "Matilde Gattoni",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
       mainImage: "../assets/post3/girl-on-bed.jpg",
@@ -83,12 +83,12 @@ export default {
     },
     {
       id: 4,
-      country: "",
+      country: "Canada",
       source: "",
       link: "",
       years: "",
       description: "",
-      autor: "Matilde Gattoni",
+      autor: "Elizabeth Gadd",
       quote: "",
       mainBannerTitle: "", //перед названием нужна запятая
       mainImage: "../assets/post4/woman-and-ducks.jpg",
